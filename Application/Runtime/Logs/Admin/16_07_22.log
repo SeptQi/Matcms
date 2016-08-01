@@ -1,0 +1,255 @@
+[ 2016-07-22T00:52:20+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+
+[ 2016-07-22T00:52:42+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2016-07-22T00:53:33+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+
+[ 2016-07-22T00:54:02+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0232s ]
+SQL: INSERT INTO `mat_news` (`title`,`small_title`,`thumb`,`title_font_color`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('test','test','/upload/2016/07/22/5790fe1975f74.png','#DC143C','1','test','test','1469120042','woya') [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `mat_news_content` [ RunTime:0.0151s ]
+SQL: INSERT INTO `mat_news_content` (`content`,`news_id`,`create_time`) VALUES ('&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;test&lt;/span&gt;&lt;span style=&quot;line-height:1.5;&quot;&gt;test&lt;/span&gt;&lt;span style=&quot;line-height:1.5;&quot;&gt;test&lt;/span&gt;&lt;span style=&quot;line-height:1.5;&quot;&gt;test &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;/div&gt;','25','1469120042') [ RunTime:0.0007s ]
+
+[ 2016-07-22T00:55:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0012s ]
+SQL: INSERT INTO `mat_news` (`title`,`small_title`,`thumb`,`title_font_color`,`cateid`,`copyfrom`,`description`,`keywords`,`create_time`,`username`) VALUES ('1','1','/upload/2016/07/22/5790fe9340acd.png','#3A5FCD','12','2','111','111','1469120150','woya') [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mat_news_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `mat_news_content` (`content`,`news_id`,`create_time`) VALUES ('1111','26','1469120150') [ RunTime:0.0003s ]
+
+[ 2016-07-22T18:21:22+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2016-07-22T18:25:03+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: Think\Model:getBarMenu方法不存在！
+
+[ 2016-07-22T18:50:40+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0017s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0080s ]
+SQL: UPDATE `mat_menu` SET `listorder`='13' WHERE ( menu_id=13 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='11' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+
+[ 2016-07-22T18:50:46+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0010s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='26' WHERE ( menu_id=13 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='11' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+
+[ 2016-07-22T18:51:26+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-22T18:51:28+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-22T19:03:45+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-22T20:28:59+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='11' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+
+[ 2016-07-22T20:29:36+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `name`='科技',`type`='0',`m`='home',`c`='cat',`f`='index',`status`='1' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+
+[ 2016-07-22T20:30:05+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='11' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='100' WHERE ( menu_id=1 ) [ RunTime:0.0003s ]
+
+[ 2016-07-22T20:30:15+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='11' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+
+[ 2016-07-22T20:30:53+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='100' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+
+[ 2016-07-22T20:30:59+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `name`='基本管理',`type`='1',`m`='admin',`c`='basic',`f`='index',`status`='0' WHERE ( menu_id=11 ) [ RunTime:0.0003s ]
+
+[ 2016-07-22T20:31:01+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-22T20:44:12+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `listorder`='100' WHERE ( menu_id=11 ) [ RunTime:0.0005s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=12 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='6' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='200' WHERE ( menu_id=1 ) [ RunTime:0.0003s ]
+
+[ 2016-07-22T20:44:17+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-22T20:44:19+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-22T20:44:20+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 无法加载控制器:Positioncontent
+
+[ 2016-07-22T20:44:22+08:00 ] 127.0.0.1 /admin.php?c=position
+ERR: 无法加载控制器:Position
+
+[ 2016-07-22T20:44:30+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-22T21:03:54+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:08:51+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: XML标签语法错误 : condition=$conds[catid] == $sitenav[menu_id]
+
+[ 2016-07-22T21:20:49+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:27:34+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=18
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:28:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=18
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:35:10+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=18
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:35:22+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=17
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:35:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=edit&id=23
+ERR: 非法操作:edit
+
+[ 2016-07-22T21:36:24+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+ERR: 非法操作:setStatus
+
+[ 2016-07-22T21:36:25+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+ERR: 非法操作:setStatus
+
+[ 2016-07-22T21:37:43+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `status`='-1' WHERE ( menu_id=12 ) [ RunTime:0.0005s ]
+
+[ 2016-07-22T21:38:40+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0005s ]
+SQL: UPDATE `mat_menu` SET `status`='-1' WHERE ( menu_id=19 ) [ RunTime:0.0003s ]
+
+[ 2016-07-22T21:40:52+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+

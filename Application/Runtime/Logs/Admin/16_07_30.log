@@ -1,0 +1,253 @@
+[ 2016-07-30T00:12:39+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='0' WHERE ( id=55 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='1' WHERE ( id=54 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='0' WHERE ( id=53 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T00:20:51+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-30T00:21:05+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0009s ]
+SQL: UPDATE `mat_news` SET `listorder`='15' WHERE ( news_id=26 ) [ RunTime:0.0005s ]
+SQL: UPDATE `mat_news` SET `listorder`='122' WHERE ( news_id=25 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='24' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='23' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='22' WHERE ( news_id=22 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T00:21:49+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `status`='0' WHERE ( news_id=25 ) [ RunTime:0.0004s ]
+
+[ 2016-07-30T00:22:56+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `listorder`='121' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='24' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='23' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='22' WHERE ( news_id=22 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='21' WHERE ( news_id=21 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T00:27:30+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `status`='1' WHERE ( news_id=25 ) [ RunTime:0.0005s ]
+
+[ 2016-07-30T00:30:18+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='0' WHERE ( menu_id=8 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='4' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='2' WHERE ( menu_id=5 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=4 ) [ RunTime:0.0003s ]
+
+[ 2016-07-30T00:31:29+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='4' WHERE ( menu_id=3 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='5' WHERE ( menu_id=4 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='2' WHERE ( menu_id=5 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='0' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T00:31:58+08:00 ] 127.0.0.1 /admin.php?c=positioncontent&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='1' WHERE ( id=54 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='3' WHERE ( id=55 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_position_content` SET `listorder`='0' WHERE ( id=53 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T00:32:22+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `status`='0' WHERE ( menu_id=4 ) [ RunTime:0.0003s ]
+
+[ 2016-07-30T00:32:54+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_menu` SET `status`='1' WHERE ( menu_id=4 ) [ RunTime:0.0003s ]
+
+[ 2016-07-30T08:32:12+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="WOYA" ) LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-07-30T08:39:54+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:40:06+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:40:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:41:34+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0006s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:42:23+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: [8] Undefined variable: listorder D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 93 行.
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=122 ) [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: [8] Undefined variable: listorder D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 93 行.
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: [8] Undefined variable: listorder D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 93 行.
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: [8] Undefined variable: listorder D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 93 行.
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=22 ) [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: [8] Undefined variable: listorder D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 93 行.
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=21 ) [ RunTime:0.0002s ]
+
+[ 2016-07-30T08:42:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 2 for Common\Model\NewsModel::updateListorderById(), called in D:\web\takahashi\Application\Admin\Controller\CommonController.class.php on line 84 and defined D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 88 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:43:10+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0005s ]
+SQL: UPDATE `mat_news` SET `listorder`='120' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='19' WHERE ( news_id=19 ) [ RunTime:0.0001s ]
+SQL: UPDATE `mat_news` SET `listorder`='18' WHERE ( news_id=18 ) [ RunTime:0.0001s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0001s ]
+
+[ 2016-07-30T08:44:45+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0005s ]
+SQL: UPDATE `mat_news` SET `title`='均衡与旗舰？魅族 MX6 / PRO 6 主观对比体验',`small_title`='魅族 MX6 / PRO 6 主观对比体验',`thumb`='/upload/2016/07/29/579b693631ec7.jpg',`title_font_color`='#3A5FCD',`catid`='8',`copyfrom`='1',`description`='魅族 MX6 / PRO 6',`keywords`='魅族 MX6 / PRO 6' WHERE ( news_id=25 ) [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\NewsContentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsContentModel.class.php 第 58 行.
+SQL: SHOW COLUMNS FROM `mat_news_content` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_news_content` SET `content`='&lt;div style=&quot;text-align:left;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;span style=&quot;font-family:monospace;font-size:medium;line-height:normal;&quot;&gt;7 月 19 日，魅族的“梦想”系列新机 — MX6 正式与我们见面了，相比魅族的 PRO 系列，MX 系列才是众多魅友们所期待的，毕竟这一经典的系列曾经是如此让魅友们为之赞叹。自行车v&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+
+[ 2016-07-30T08:45:40+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0006s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-30T08:46:13+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: newsId D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 128 行.
+NOTIC: 建议使用E方法替代throw_exception
+

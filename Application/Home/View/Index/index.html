@@ -1,0 +1,135 @@
+<include file="Index/header" />	
+<!-- banner -->
+<div class="banner">
+		<script src="__PUBLIC__/js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 300,
+        manualControls: '#slider3-pager',
+      });
+    });
+  </script>
+
+ <div class="slider">
+	  <div class="callbacks_container">
+	     <ul class="rslides" id="slider">
+	     <volist name="result['topPicNews']" id="vo">
+	         <li>
+	         <a target="_blank" href="/index.php?c=detail&id={$vo['news_id']}">
+				<img src="{$vo['thumb']}" style="width: 100%;">
+				<div class="banner-info" style="top: 60%;">
+					<h3>{$vo['title']}</h3>
+				</div>
+			 </a>
+	         </li>
+	     </volist>
+	     </ul>
+	  </div>
+  </div>
+<!---->
+	 <div class="banner-bottom-grids">
+		 <div class="container">
+			 <div class="col-md-6 banner-text-info clr1">
+				 <i class="icon2"></i>
+				 <div class="bnr-text">				 
+					 <h3>NEWS</h3>
+					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 banner-text-info clr2">	
+				 <i class="icon1"></i>
+				 <div class="bnr-text">
+					 <h3>SCIENCE & TECHNOLOGY</h3>
+					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+			 
+			 <div class="col-md-6 banner-text-info clr3 btm">	
+				 <i class="icon3"></i>
+				 <div class="bnr-text">
+					 <h3>ENTERTAINMENT</h3>
+					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 banner-text-info clr4 btm">	
+				 <i class="icon4"></i>
+				 <div class="bnr-text">
+					 <h3>COURSE</h3>
+					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!-- //banner -->
+
+<!-- content -->
+<div class="content">
+	 <div class="container">
+		 <div class="content-grids">
+		 	<volist name="result['topSmallNews1']" id="vo">
+			 <div class="col-md-4 content-grid1">
+				 <img src="{$vo['thumb']}"/>
+				 <h3>{$vo['title']}</h3>
+				 <p>这里是内容<br/>这里是内容<br/></p>
+				 <a target="_blank" href="/index.php?c=detail&id={$vo['news_id']}">Read More..</a>
+			 </div>
+			</volist>
+		 </div>
+	 </div>
+</div>
+<!--- //content--->
+<!-- content-bottom -->
+<div class="content-info">
+	 <div class="container">
+		 <div class="content-bottom-grids">
+			 <div class="col-md-4 popular">	
+				 <h3>NEWEST</h3>
+				 <ul>
+				 	<volist name="result['rankNews']" id="vo">
+					 <li><a href="/index.php?c=detail&id={$vo['news_id']}">{$vo['title']}</a></li>
+					</volist>
+				 </ul>
+			 </div>
+			 <div class="col-md-4 welcome-pic">
+				 <h3>ABOUT</h3>
+				 <h4>Morbi sed arcu mollis, elementum erat venenatis, tincidunt tellus.</h4>
+				 <img src="__PUBLIC__/images/cnt.ab.jpg" alt=""/>
+				 <p>Aenean ut condimentum magna, mattis pretium massa. Sed sollicitudin ullamcorper auctor. Duis vestibulum velit id augue pulvinar egestas. 
+				 Morbi sed orci auctor, feugiat felis at, fermentum magna. In ac egestas lectus.</p>
+			</div>
+			<div class="col-md-4 coach">
+				 <h3>OUR COACHES</h3>
+				 <div class="coch-grid chr">
+					 <div class="coach-pic">
+						 <img src="__PUBLIC__/images/ch1.jpg" alt=""/>
+					 </div>
+					 <div class="coach-pic-info">
+						 <h4><a href="#">Phasellus at Tellus</a></h4>
+						 <h5>Aenean vestibulum </h5>
+						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
+					 </div>
+					 <div class="clearfix"></div>
+				 </div>
+				 <div class="coch-grid">
+					 <div class="coach-pic">
+						 <img src="__PUBLIC__/images/ch2.jpg" alt=""/>
+					 </div>
+					 <div class="coach-pic-info">
+						 <h4><a href="#">Phasellus at Tellus</a></h4>
+						 <h5>Aenean vestibulum </h5>
+						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
+					 </div>
+					 <div class="clearfix"></div>
+				 </div>
+			</div>
+			<div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!-- //content-bottom -->
+<include file="Index/footer" />

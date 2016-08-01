@@ -1,0 +1,118 @@
+[ 2016-07-31T01:44:49+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-07-31T01:50:18+08:00 ] 127.0.0.1 /admin.php?c=basic&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) D:\web\takahashi\Application\Common\Model\BasicModel.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) D:\web\takahashi\Application\Common\Model\BasicModel.class.php 第 23 行.
+
+[ 2016-07-31T08:46:03+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2016-07-31T08:46:26+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('25','19')  [ RunTime:0.0028s ]
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\PositioncontentModel.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0007s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','你想要 iPhone 7 在哪方面做出改变？','/upload/2016/07/29/579b69753566f.jpg','19','1','1456673467') [ RunTime:0.0031s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','均衡与旗舰？魅族 MX6 / PRO 6 主观对比体验','/upload/2016/07/29/579b693631ec7.jpg','25','1','1469120042') [ RunTime:0.0003s ]
+
+[ 2016-07-31T08:56:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('25','19','26')  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\PositioncontentModel.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0005s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','你想要 iPhone 7 在哪方面做出改变？','/upload/2016/07/29/579b69753566f.jpg','19','1','1456673467') [ RunTime:0.0003s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','均衡与旗舰？魅族 MX6 / PRO 6 主观对比体验','/upload/2016/07/29/579b693631ec7.jpg','25','1','1469120042') [ RunTime:0.0002s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('2','致命诱惑，Galaxy S7 edge 蝙蝠侠特别版','/upload/2016/07/29/579b6907d160b.jpg','26','1','1469120150') [ RunTime:0.0002s ]
+
+[ 2016-07-31T17:36:59+08:00 ] 192.168.28.251 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-31T18:20:57+08:00 ] 192.168.28.251 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username=" woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-31T18:21:10+08:00 ] 192.168.28.251 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-31T18:21:29+08:00 ] 192.168.28.251 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0010s ]
+SQL: UPDATE `mat_position_content` SET `status`='0' WHERE ( id=55 ) [ RunTime:0.0007s ]
+
+[ 2016-07-31T18:21:37+08:00 ] 192.168.28.251 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0010s ]
+SQL: UPDATE `mat_position_content` SET `status`='0' WHERE ( id=54 ) [ RunTime:0.0003s ]
+
+[ 2016-07-31T18:21:42+08:00 ] 192.168.28.251 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0009s ]
+SQL: UPDATE `mat_position_content` SET `status`='1' WHERE ( id=55 ) [ RunTime:0.0003s ]
+
+[ 2016-07-31T18:21:47+08:00 ] 192.168.28.251 /admin.php?c=positioncontent&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\PositioncontentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\PositioncontentController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\PositioncontentModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\PositioncontentModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0015s ]
+SQL: UPDATE `mat_position_content` SET `status`='1' WHERE ( id=54 ) [ RunTime:0.0004s ]
+
+[ 2016-07-31T18:50:10+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+

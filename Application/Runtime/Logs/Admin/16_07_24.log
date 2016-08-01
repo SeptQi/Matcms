@@ -1,0 +1,591 @@
+[ 2016-07-24T00:38:21+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T00:38:23+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T00:40:10+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T01:25:26+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T01:27:33+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='100' WHERE ( menu_id=11 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+
+[ 2016-07-24T01:32:12+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='15' WHERE ( menu_id=11 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='25' WHERE ( menu_id=8 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=1 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0002s ]
+
+[ 2016-07-24T01:33:07+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='20' WHERE ( menu_id=6 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='3' WHERE ( menu_id=3 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='0' WHERE ( menu_id=5 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='0' WHERE ( menu_id=4 ) [ RunTime:0.0002s ]
+
+[ 2016-07-24T01:36:39+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T01:39:08+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `status`='-1' WHERE ( news_id=26 ) [ RunTime:0.0006s ]
+
+[ 2016-07-24T02:27:32+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-24T09:09:27+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-24T09:12:11+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0011s ]
+SQL: UPDATE `mat_news` SET `status`='-1' WHERE ( news_id=25 ) [ RunTime:0.0006s ]
+
+[ 2016-07-24T09:15:53+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-24T10:11:46+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T10:13:02+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0025s ]
+SQL: UPDATE `mat_menu` SET `name`='文章管理<li class=\"badge\">50</li>',`type`='1',`m`='admin',`c`='content',`f`='index',`status`='1' WHERE ( menu_id=6 ) [ RunTime:0.0009s ]
+
+[ 2016-07-24T10:56:06+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T10:56:10+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T10:59:18+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T10:59:21+08:00 ] 127.0.0.1 /admin.php?c=basic
+ERR: 无法加载控制器:Basic
+
+[ 2016-07-24T10:59:55+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0009s ]
+SQL: UPDATE `mat_menu` SET `listorder`='20' WHERE ( menu_id=6 ) [ RunTime:0.0005s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=11 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='12' WHERE ( menu_id=1 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='9' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+
+[ 2016-07-24T11:43:19+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0058s ]
+
+[ 2016-07-24T11:58:58+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T17:24:54+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-07-24T17:48:11+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `status`='0' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+
+[ 2016-07-24T17:48:30+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `status`='-1' WHERE ( news_id=25 ) [ RunTime:0.0003s ]
+
+[ 2016-07-24T18:18:27+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:14+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:15+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:16+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:17+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:18+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:18+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:19+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:19+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:19+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:20+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:20:20+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:27:53+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_common' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_common`
+
+[ 2016-07-24T18:32:46+08:00 ] 127.0.0.1 /admin.php?catid=&c=content&a=index&title=
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:32:49+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:32:51+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:34:06+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:36:30+08:00 ] 127.0.0.1 /admin.php?c=test
+ERR: Method Admin\Controller\TestController::__call() does not exist
+
+[ 2016-07-24T18:38:28+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 参数错误或者未定义:navs
+
+[ 2016-07-24T18:38:54+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:39:45+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:39:46+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:39:47+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:41:31+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:41:43+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:41:44+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:41:55+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:42:33+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: Think\Model:getMenuCount方法不存在！
+
+[ 2016-07-24T18:43:43+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: Think\Model:getmenusCount方法不存在！
+
+[ 2016-07-24T18:48:39+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_content`
+
+[ 2016-07-24T18:48:44+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:47+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:48+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:48+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:49+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:49+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:50+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:48:50+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: 1146:Table 'mat.mat_new' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_new`
+
+[ 2016-07-24T18:49:31+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: Think\Model:getNewssCount方法不存在！
+
+[ 2016-07-24T18:51:36+08:00 ] 127.0.0.1 /admin.php?c=test&a=getCount
+ERR: Think\Model:getMenuCount方法不存在！
+
+[ 2016-07-24T18:55:04+08:00 ] 127.0.0.1 /admin.php?c=test
+ERR: Method Admin\Controller\TestController::__call() does not exist
+
+[ 2016-07-24T18:55:05+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T18:56:37+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T18:56:51+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T18:59:08+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T18:59:19+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 参数错误或者未定义:navs
+
+[ 2016-07-24T18:59:34+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_oos' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_oos`
+
+[ 2016-07-24T19:13:17+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T19:13:19+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T19:23:42+08:00 ] 127.0.0.1 /admin.php?c=content
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T19:23:44+08:00 ] 127.0.0.1 /admin.php?c=positioncontent
+ERR: 1146:Table 'mat.mat_positioncontent' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_positioncontent`
+
+[ 2016-07-24T19:26:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-24T19:26:49+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-24T19:28:18+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:28:46+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:12+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:13+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:13+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:14+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:14+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:14+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:14+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:14+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:15+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:15+08:00 ] 127.0.0.1 /admin.php?c=test&a=getcount
+ERR: 1146:Table 'mat.mat_555' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `mat_555`
+
+[ 2016-07-24T19:29:48+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-24T19:30:31+08:00 ] 127.0.0.1 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-24T19:35:23+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T19:35:46+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `status`='-1' WHERE ( news_id=26 ) [ RunTime:0.0005s ]
+
+[ 2016-07-24T19:40:04+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-07-24T20:32:59+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-07-24T20:41:36+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-24T21:05:58+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-07-24T21:31:35+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-07-24T21:55:32+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2016-07-24T21:56:31+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="wpya" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-24T21:56:38+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-24T21:59:13+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0015s ]
+SQL: UPDATE `mat_news` SET `listorder`='122' WHERE ( news_id=25 ) [ RunTime:0.0075s ]
+SQL: UPDATE `mat_news` SET `listorder`='150' WHERE ( news_id=26 ) [ RunTime:0.0011s ]
+SQL: UPDATE `mat_news` SET `listorder`='24' WHERE ( news_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='23' WHERE ( news_id=23 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='22' WHERE ( news_id=22 ) [ RunTime:0.0002s ]
+
+[ 2016-07-24T21:59:18+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0011s ]
+SQL: UPDATE `mat_news` SET `status`='0' WHERE ( news_id=26 ) [ RunTime:0.0008s ]
+
+[ 2016-07-24T21:59:22+08:00 ] 127.0.0.1 /admin.php?c=content&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `status`='1' WHERE ( news_id=26 ) [ RunTime:0.0004s ]
+
+[ 2016-07-24T21:59:50+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+NOTIC: [8] Undefined index: menu_id D:\web\takahashi\Application\Admin\Controller\MenuController.class.php 第 58 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0010s ]
+SQL: INSERT INTO `mat_menu` (`name`,`type`,`m`,`c`,`f`,`status`) VALUES ('叶名管理','1',' a','a','a','1') [ RunTime:0.0073s ]
+
+[ 2016-07-24T21:59:53+08:00 ] 127.0.0.1 /admin.php?c=a&a=
+ERR: 无法加载控制器:A
+
+[ 2016-07-24T22:00:04+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `status`='-1' WHERE ( menu_id=20 ) [ RunTime:0.0003s ]
+
+[ 2016-07-24T22:00:53+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_menu` SET `name`='文章管理',`type`='1',`m`='admin',`c`='content',`f`='index',`status`='0' WHERE ( menu_id=6 ) [ RunTime:0.0013s ]
+
+[ 2016-07-24T22:01:03+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_menu` SET `name`='文章管理',`type`='1',`m`='admin',`c`='content',`f`='index',`status`='1' WHERE ( menu_id=6 ) [ RunTime:0.0004s ]
+
+[ 2016-07-24T22:57:49+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2016-07-24T22:59:09+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-07-24T23:01:00+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002893s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-24T23:03:29+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0006s ]
+

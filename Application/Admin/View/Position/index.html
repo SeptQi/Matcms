@@ -1,0 +1,90 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+<div id="page-wrapper">
+
+    <div class="container-fluid" >
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li>
+                      <i class="fa fa-dashboard"></i><a href="/admin.php?c=position"> 推荐位管理 </a>
+                    </li>
+                    <li class="active">
+                      <i class="fa fa-table"></i> 推荐位列表 
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+      <div>
+        <button id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添&nbsp;&nbsp;&nbsp;&nbsp;加 </button>
+      </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3></h3>
+                <div class="table-responsive">
+                    <form id="singcms-listorder">
+                    <table class="table table-bordered table-hover singcms-table">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>推荐位名称</th>
+                                <th>时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <volist name="position" id="pos">
+                            <tr>
+                                <td>{$pos['id']}</td>
+                                <td>{$pos['name']}</td>
+                                <td>{$pos['create_time']|date="Y-m-s H:i:s", ###}</td>
+                                <td>
+                                    <span  attr-status="<if condition="$pos['status'] eq 1">0<else/>1</if>"  attr-id="{$pos['id']}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$pos['status']|status}</span>
+                                </td>
+                                <td>
+                                    <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$pos['id']}" ></span>
+                                    <span class="sing_cursor glyphicon glyphicon-remove-circle" aria-hidden="true" id="singcms-delete"  attr-id="{$pos['id']}"  attr-message="删除"></span>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                    </from>
+                    <nav>
+                      <ul class="pagination">
+                          {$pageres}
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<script>
+    var SCOPE = {
+        'edit_url' : '/admin.php?c=position&a=edit',
+        'set_status_url' : '/admin.php?c=position&a=setStatus',
+        'add_url' : '/admin.php?c=position&a=add',
+        'listorder_url' : '/admin.php?c=position&a=listorder',
+    }
+
+</script>
+<include file="Index/footer" />

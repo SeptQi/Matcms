@@ -1,0 +1,24 @@
+[ 2016-07-05T23:38:33+08:00 ] 127.0.0.1 /admin.php?m=&&m=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Login
+
+[ 2016-07-05T23:38:50+08:00 ] 127.0.0.1 /admin.php?m=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+ERR: 无法加载模块:Login
+
+[ 2016-07-05T23:39:43+08:00 ] 127.0.0.1 /admin.php?m=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+ERR: 无法加载模块:Login
+
+[ 2016-07-05T23:40:04+08:00 ] 127.0.0.1 /admin.php?m=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Login
+

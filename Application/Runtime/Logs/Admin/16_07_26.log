@@ -1,0 +1,448 @@
+[ 2016-07-26T02:04:16+08:00 ] 127.0.0.1 /index.php?m=admin&c=login&a=newindex
+ERR: 非法操作:newindex
+
+[ 2016-07-26T02:04:23+08:00 ] 127.0.0.1 /index.php?m=admin&c=index&a=newindex
+ERR: 非法操作:newindex
+
+[ 2016-07-26T02:08:52+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0027s ]
+
+[ 2016-07-26T02:08:54+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-26T11:38:27+08:00 ] 192.168.191.2 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-07-26T11:38:43+08:00 ] 192.168.191.2 /admin.php?c=admin&a=personal
+ERR: 无法加载控制器:Admin
+
+[ 2016-07-26T11:39:13+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:15+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:17+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:17+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:17+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:18+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T11:39:19+08:00 ] 192.168.191.2 /admin.php?c=content&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 69 行.
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T14:07:00+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-07-26T18:16:07+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-07-26T20:40:53+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-07-26T20:40:57+08:00 ] 127.0.0.1 /admin.php?c=position&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-07-26T21:01:22+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-07-26T21:01:24+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-07-26T21:01:31+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-07-26T21:01:46+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-07-26T21:02:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+
+[ 2016-07-26T21:02:46+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Undefined variable: position_id D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 189 行.
+
+[ 2016-07-26T21:02:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [8] Undefined variable: position_id D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 189 行.
+
+[ 2016-07-26T21:03:09+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined variable: positionId D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 189 行.
+
+[ 2016-07-26T21:03:49+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2016-07-26T22:11:47+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8] Undefined variable: push D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 187 行.
+
+[ 2016-07-26T22:11:52+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Undefined variable: push D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 187 行.
+
+[ 2016-07-26T22:12:01+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Undefined variable: push D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 187 行.
+
+[ 2016-07-26T22:13:07+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+ERR: Think\Model:getNewsByNewsId方法不存在！
+
+[ 2016-07-26T22:15:02+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0096s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0147s ]
+ERR: Think\Model:insert方法不存在！
+
+[ 2016-07-26T22:25:39+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0018s ]
+ERR: Think\Model:insert方法不存在！
+
+[ 2016-07-26T22:25:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0010s ]
+ERR: Think\Model:insert方法不存在！
+
+[ 2016-07-26T22:26:44+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0012s ]
+
+[ 2016-07-26T22:28:34+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0040s ]
+
+[ 2016-07-26T22:28:42+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0009s ]
+
+[ 2016-07-26T22:28:59+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0008s ]
+ERR: 1364:Field 'news_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`status`,`create_time`) VALUES ('1','李克强让部长们当第一新闻发言人','','1','1457855362')
+ERR: 1364:Field 'news_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`status`,`create_time`) VALUES ('1','李克强让部长们当第一新闻发言人','','1','1457855362')
+
+[ 2016-07-26T22:30:35+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: mew D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 203 行.
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0006s ]
+
+[ 2016-07-26T22:31:36+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0004s ]
+
+[ 2016-07-26T22:32:43+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0007s ]
+
+[ 2016-07-26T22:32:58+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('25','24')  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0009s ]
+ERR: 1364:Field 'news_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`status`,`create_time`) VALUES ('1','中超-汪嵩世界波制胜 富力客场1-0力擒泰达','','1','1457856460')
+ERR: 1364:Field 'news_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`status`,`create_time`) VALUES ('1','中超-汪嵩世界波制胜 富力客场1-0力擒泰达','','1','1457856460')
+
+[ 2016-07-26T22:33:56+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0009s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('1','李克强让部长们当第一新闻发言人','','22','1','1457855362') [ RunTime:0.0003s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('1','重庆美女球迷争芳斗艳','','23','1','1457855680') [ RunTime:0.0002s ]
+
+[ 2016-07-26T22:37:47+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+NOTIC: [8] Undefined index: push D:\web\takahashi\Application\Admin\Controller\ContentController.class.php 第 186 行.
+
+[ 2016-07-26T22:37:50+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T22:38:00+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T22:38:24+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T22:40:22+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T22:43:25+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+NOTIC: 建议使用E方法替代throw_exception
+
+[ 2016-07-26T22:43:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+ERR: 参数不合法
+
+[ 2016-07-26T22:44:22+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('22')  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0008s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','李克强让部长们当第一新闻发言人','','22','1','1457855362') [ RunTime:0.0004s ]
+
+[ 2016-07-26T22:46:12+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+ERR: Think\Model:getNewsByNewsId方法不存在！
+
+[ 2016-07-26T22:47:01+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+ERR: Think\Model:getNewsByNewsId方法不存在！
+
+[ 2016-07-26T22:47:52+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+
+[ 2016-07-26T22:48:11+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0010s ]
+
+[ 2016-07-26T22:49:02+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0009s ]
+
+[ 2016-07-26T22:49:27+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0006s ]
+
+[ 2016-07-26T22:49:46+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+
+[ 2016-07-26T22:49:53+08:00 ] 127.0.0.1 /admin.php?c=content&a=push
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\takahashi\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_news` WHERE `news_id` IN ('23','22')  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mat_position_content` [ RunTime:0.0007s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','李克强让部长们当第一新闻发言人','','22','1','1457855362') [ RunTime:0.0004s ]
+SQL: INSERT INTO `mat_position_content` (`position_id`,`title`,`thumb`,`news_id`,`status`,`create_time`) VALUES ('3','重庆美女球迷争芳斗艳','','23','1','1457855680') [ RunTime:0.0003s ]
+
