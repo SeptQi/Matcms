@@ -33,7 +33,7 @@ class ContentController extends CommonController
         }
         $conds['status'] = array('neq', -1);
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
-        $pageSize = 5;
+        $pageSize = 10;
         $startRow = ($page - 1) * $pageSize;
         $limit = $startRow . ',' . $pageSize;
         $news = D('News')->select($conds, $limit);
@@ -47,6 +47,7 @@ class ContentController extends CommonController
             'news'        => $news,
             'conds'       => $conds,
             'positions'   => $positions,
+            'count'       => $count,
             ));
         $this->display();
     }

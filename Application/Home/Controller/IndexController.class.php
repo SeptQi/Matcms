@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
-class IndexController extends CommonController {
+class IndexController extends CommonController
+{
     public function index()
     {
         $rankNews = $this->getRank();
@@ -18,8 +19,13 @@ class IndexController extends CommonController {
         $this->display();
         //$this->show();
     }
-    public function _empty()
+    public function check()
     {
-        $this->display("Empty/empty");
+        return show(1, '登陆成功');
     }
+    public function insert()
+    {
+        return show(1, '注册成功');
+    }
+
 }

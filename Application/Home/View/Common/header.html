@@ -1,0 +1,135 @@
+<?php 
+    $config = D('Basic')->select();
+    $navs = D('Menu')->getBarMenus();
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$config['title']}</title>
+    <!--fonts-->
+        <link href='__PUBLIC__/css/font.css' rel='stylesheet' type='text/css'>    
+    <!--//fonts-->      
+        <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- for-mobile-apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="{$config['keywords']}" />
+        <meta name="description" content="{$config['description']}" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <!-- js -->
+        <script src="__PUBLIC__/js/jquery.js"></script>
+        <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+        <script src="__PUBLIC__/js/dialog/layer.js"></script>
+        <script src="__PUBLIC__/js/dialog.js"></script>
+        <script src="__PUBLIC__/js/home/login.js"></script>
+    <!-- js -->
+</head>
+<body>
+<!-- header -->
+<div class="header">
+     <div class="container">
+         <div class="logo">
+               <h1><a href="{:U('index')}">MAT CMS</a></h1>
+         </div> 
+         <div class="top-menu">
+              <ul>
+                <li class="<if condition="$result['catId'] == 0">active</if>"><a href="/">首页</a></li>
+                <volist name="navs" id="nav">
+                    <li class="<if condition="$nav['menu_id'] eq $result['catid']">active</if>"><a href="/index.php?c=cat&id={$nav['menu_id']}">{$nav['name']}</a></li>
+                </volist>
+             </ul>           
+         </div>         
+         <!-- script-for-menu -->
+         <script>
+                $("span.menu").click(function(){
+                    $(".top-menu ul").slideToggle("slow" , function(){
+                    });
+                });
+         </script>
+         <!-- script-for-menu -->       
+
+         <div class="clearfix"></div>
+     </div>
+</div>
+<!-- //header -->
+<!-- banner -->
+<div class="strip">
+     <div class="container">
+     <div class="search">
+            <form>
+                <input type="text" value="" placeholder="Search...">
+                <input type="submit" value="">
+            </form>
+     </div>     
+     <div class="social">  
+        <button class="btn btn-primary" data-toggle="modal" data-target="#login" logintype="1">登录</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary" data-toggle="modal" data-target="#signin" logintype="0">注册</button>          
+     </div>
+        <div class="clearfix"></div>
+        </div>
+</div>
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">欢迎登录</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名：</label>
+            <input type="text" class="form-control" name="loginusername">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密码：</label>
+            <input type="text" class="form-control" name="loginpassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+        <button type="button" class="btn btn-primary" onclick="login.check('0')">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signin -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">欢迎注册</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名：</label>
+            <input type="text" class="form-control" name="signinusername">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密码：</label>
+            <input type="text" class="form-control" name="signinpassword">
+          </div>
+          <div class="form-group" id="#asd">
+            <label for="message-text" class="control-label">昵称：</label>
+            <input type="text" class="form-control" name="realname">
+          </div>
+          <div class="form-group" id="#email">
+            <label for="message-text" class="control-label">邮箱：</label>
+            <input type="text" class="form-control" name="email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+        <button type="button" class="btn btn-primary" onclick="login.check('1')">提交</button>
+      </div>
+    </div>
+  </div>
+</div>

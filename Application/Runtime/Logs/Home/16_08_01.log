@@ -1,0 +1,46 @@
+[ 2016-08-01T11:10:38+08:00 ] 127.0.0.1 /index.php?c=detail&id=19
+ERR: 模板不存在:./Application/Home/View/Detail/index.html
+
+[ 2016-08-01T15:27:01+08:00 ] 127.0.0.1 /index.php?c=cat&id=4
+ERR: 模板不存在:./Application/Home/View/Cat/index.html
+
+[ 2016-08-01T17:06:14+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+
+[ 2016-08-01T17:06:21+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-08-01T17:11:37+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-08-01T17:12:53+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+
+[ 2016-08-01T17:13:05+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-08-01T17:21:22+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-08-01T18:17:10+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-08-01T18:18:37+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+

@@ -36,4 +36,11 @@ class CommonController extends Controller
         $news = D('News')->getRank($conds, 8);
         return $news;
     }
+    /**
+     * 空操作方法
+     */
+    public function _empty()
+    {
+        $this->display("Empty/empty");
+    }
 }

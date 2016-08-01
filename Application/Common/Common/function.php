@@ -103,19 +103,9 @@ function isThumb($thumb)
     }
     return '无';
 }
-
-function getCount($navs)
-{
-    try {
-        if ($navs == 'basic') {
-            echo "";
-            return;
-        }
-        $navs = ($navs == 'content') ? 'news' : $navs;
-        $navs = ucfirst($navs);//首字母大写
-        $getc = 'get' . $navs . 'Count';
-        echo D($navs)->$getc();
-    } catch(\Exception $e) {
-        echo 0;
+function getUserType($type){
+    if($type == 2){
+        return '<span style="color:red">后台用户</span>';
     }
+    return '<span style="color:green">前台用户</span>';
 }

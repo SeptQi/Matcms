@@ -25,6 +25,7 @@ define('APP_DEBUG',True);
 $_GET['m'] = (!isset($_GET['m']) || !$_GET['m']) ? 'admin' : $_GET['m'];
 $_GET['c'] = (!isset($_GET['c']) || !$_GET['c']) ? 'index' : $_GET['c'];
 $_GET['a'] = (!isset($_GET['a']) || !$_GET['a']) ? 'index' : $_GET['a'];
+
 // 定义应用目录
 define('APP_PATH','./Application/');
 

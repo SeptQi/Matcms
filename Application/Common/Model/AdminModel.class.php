@@ -19,4 +19,17 @@ class AdminModel extends Model
         $ret = $this->_db->where('username="' . $username . '"')->find();
         return $ret;
     }
+    public function insert($data = array()){
+        if(!$data || !is_array($data)){
+            return 0;
+        }
+        return $this->_db->add($data);
+    }
+
+    public function updateById($data = array()){
+        if(!$data || !is_array($data)){
+            throw_exception('更新的数据不合法');
+        }
+        return $this->_db->where('admin_id ='.$data['admin_id'])->save($data);
+    }
 }

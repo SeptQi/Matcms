@@ -17,6 +17,10 @@
     <!-- //for-mobile-apps -->
     <!-- js -->
         <script src="/Public/js/jquery.js"></script>
+        <script src="/Public/js/bootstrap.min.js"></script>
+        <script src="/Public/js/dialog/layer.js"></script>
+        <script src="/Public/js/dialog.js"></script>
+        <script src="/Public/js/home/login.js"></script>
     <!-- js -->
 </head>
 <body>
@@ -27,7 +31,6 @@
                <h1><a href="<?php echo U('index');?>">MAT CMS</a></h1>
          </div> 
          <div class="top-menu">
-             <span class="menu"></span>
               <ul>
                 <li class="<?php if($result['catId'] == 0): ?>active<?php endif; ?>"><a href="/">首页</a></li>
                 <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li class="<?php if($nav['menu_id'] == $result['catid']): ?>active<?php endif; ?>"><a href="/index.php?c=cat&id=<?php echo ($nav['menu_id']); ?>"><?php echo ($nav['name']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -55,15 +58,75 @@
                 <input type="submit" value="">
             </form>
      </div>     
-     <div class="social">            
-             <a href="#"><i class="facebook"></i></a>
-             <a href="#"><i class="twitter"></i></a>
-             <a href="#"><i class="dribble"></i></a>    
-             <a href="#"><i class="google"></i></a> 
-             <a href="#"><i class="youtube"></i></a>    
+     <div class="social">  
+        <button class="btn btn-primary" data-toggle="modal" data-target="#login" logintype="1">登录</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-primary" data-toggle="modal" data-target="#signin" logintype="0">注册</button>          
      </div>
         <div class="clearfix"></div>
         </div>
+</div>
+<!-- login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">欢迎登录</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名：</label>
+            <input type="text" class="form-control" name="loginusername">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密码：</label>
+            <input type="text" class="form-control" name="loginpassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+        <button type="button" class="btn btn-primary" onclick="login.check('0')">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signin -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">欢迎注册</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名：</label>
+            <input type="text" class="form-control" name="signinusername">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密码：</label>
+            <input type="text" class="form-control" name="signinpassword">
+          </div>
+          <div class="form-group" id="#asd">
+            <label for="message-text" class="control-label">昵称：</label>
+            <input type="text" class="form-control" name="realname">
+          </div>
+          <div class="form-group" id="#email">
+            <label for="message-text" class="control-label">邮箱：</label>
+            <input type="text" class="form-control" name="email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+        <button type="button" class="btn btn-primary" onclick="login.check('1')">提交</button>
+      </div>
+    </div>
+  </div>
 </div>	
 <!-- banner -->
 <div class="banner">

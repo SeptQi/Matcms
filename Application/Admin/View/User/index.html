@@ -1,0 +1,118 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+  <include file="Index/nav"/>
+  <div id="page-wrapper">
+
+    <div class="container-fluid" >
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li>
+              <i class="fa fa-dashboard"></i><a href="/admin.php?c=content"> 用户管理 </a>
+            </li>
+            <li class="active">
+              <i class="fa fa-table"></i> 用户列表
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="pull-left">
+        <button id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 添&nbsp;&nbsp;&nbsp;&nbsp;加 </button>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <form action="/admin.php" method="get">
+
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">用户类型</span>
+              <select class="form-control" name="type">
+                <option value=''>请选择用户类型</option>
+                <option value="2" <if condition="$conds.type eq 2">selected</if>>后台用户</option>
+                <option value="1" <if condition="$conds.type eq 1">selected</if>>前台用户</option>
+              </select>
+            </div>
+          </div>
+
+          <input type="hidden" name="c" value="user"/>
+          <input type="hidden" name="a" value="index"/>
+          <div class="col-md-3">
+            <div class="input-group">
+
+              <span class="input-group-addon">搜索用户</span>
+              <input class="form-control" name="title" type="text" value="{$conds.title}"/>
+                <span class="input-group-btn">
+                  <button id="sub_data" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3></h3>
+          <div class="table-responsive">
+            <form id="singcms-listorder">
+              <table class="table table-bordered table-hover singcms-table">
+                <thead>
+                <tr>
+                  <th id="singcms-checkbox-all" width="10"><input type="checkbox"/></th>
+                  <th>用户id</th>
+                  <th>用户名</th>
+                  <th>上次登录IP</th>
+                  <th>上次登录时间</th>
+                  <th>邮箱地址</th>
+                  <th>真实名字</th>
+                  <th>状态</th>
+                  <th>类型</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <volist name="data" id="data">
+                    <tr>
+                      <td><input type="checkbox" name="pushcheck" value="{$data.news_id}"></td>
+                      <td>{$data.admin_id}</td>
+                      <td>{$data.username}</td>
+                      <td>{$data.lastloginip}</td>
+                      <td>{$data.lastlogintime|date='Y-m-d H:i:s',###}</td>
+                      <td>{$data.email}</td>
+                      <td>{$data.realname}</td>
+                      <td><span attr-status="<if condition="$data.status eq 1">1<else/>0</if>"  attr-id="{$data.user_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$new.status|status}</span></td>
+                      <td>{$data.type|getUserType}</td>
+                    </tr>
+                  </volist>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          <div class="pull-left">
+            <ul class='pagination'>
+              {$pageres}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<script>
+  var SCOPE = {
+    'edit_url' : '/admin.php?c=user&a=edit',
+    'add_url' : '/admin.php?c=user&a=add',
+    'set_status_url' : '/admin.php?c=user&a=setStatus',
+    'sing_news_view_url' : '/index.php?c=view',
+    'listorder_url' : '/admin.php?c=user&a=listorder',
+    'push_url' : '/admin.php?c=user&a=push',
+  }
+</script>
+<include file="Index/footer" />

@@ -67,7 +67,7 @@
         <a href="/admin.php"><i class="fa fa-fw fa-dashboard"></i>首页</a>
       </li>
       <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li <?php echo (getActive($nav["c"])); ?>>
-          <a href="<?php echo (getAdminMenuUrl($nav)); ?>"><i class="fa fa-fw fa-dashboard"></i><?php echo ($nav["name"]); ?><span class="badge pull-right"><?php echo (getCount($nav["c"])); ?></span></a>
+          <a href="<?php echo (getAdminMenuUrl($nav)); ?>"><i class="fa fa-fw fa-dashboard"></i><?php echo ($nav["name"]); ?></a>
         </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
   </div>
@@ -162,6 +162,7 @@
               </table>
             </form>
           </div>
+            <div class="pull-left col-md-12" style="">共<?php echo ($count); ?>条</div>
           <div class="pull-left">
             <ul class='pagination'>
               <?php echo ($pageres); ?>

@@ -19,3 +19,291 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
 SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0016s ]
 SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0010s ]
 
+[ 2016-08-01T11:11:06+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-08-01T11:11:51+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0010s ]
+SQL: UPDATE `mat_news` SET `listorder`='18' WHERE ( news_id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:11:55+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='18' WHERE ( news_id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:11:59+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='18' WHERE ( news_id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:12:01+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='18' WHERE ( news_id=18 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:12:10+08:00 ] 127.0.0.1 /admin.php?c=content&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Admin\Controller\ContentController::listorder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\ContentController.class.php 第 24 行.
+NOTIC: [2048] Declaration of Common\Model\NewsModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\NewsModel.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `mat_news` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_news` SET `listorder`='20' WHERE ( news_id=20 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_news` SET `listorder`='21' WHERE ( news_id=18 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_news` SET `listorder`='17' WHERE ( news_id=17 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=24 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_news` SET `listorder`='0' WHERE ( news_id=23 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:13:11+08:00 ] 127.0.0.1 /admin.php?c=menu&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0011s ]
+SQL: UPDATE `mat_menu` SET `status`='1' WHERE ( menu_id=13 ) [ RunTime:0.0009s ]
+
+[ 2016-08-01T11:13:29+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='91' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='21' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:13:34+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0006s ]
+SQL: UPDATE `mat_menu` SET `listorder`='91' WHERE ( menu_id=9 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='21' WHERE ( menu_id=6 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T11:13:37+08:00 ] 127.0.0.1 /admin.php?c=menu&a=listorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0008s ]
+SQL: UPDATE `mat_menu` SET `listorder`='91' WHERE ( menu_id=9 ) [ RunTime:0.0004s ]
+SQL: UPDATE `mat_menu` SET `listorder`='21' WHERE ( menu_id=6 ) [ RunTime:0.0003s ]
+SQL: UPDATE `mat_menu` SET `listorder`='10' WHERE ( menu_id=10 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=13 ) [ RunTime:0.0002s ]
+SQL: UPDATE `mat_menu` SET `listorder`='1' WHERE ( menu_id=11 ) [ RunTime:0.0002s ]
+
+[ 2016-08-01T15:10:18+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-08-01T15:10:25+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-08-01T16:42:25+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="w" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-08-01T16:42:29+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="w" ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-08-01T16:42:42+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-08-01T17:03:37+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-08-01T18:46:02+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-08-01T18:46:07+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-08-01T18:46:56+08:00 ] 127.0.0.1 /admin.php?c=admin
+ERR: 无法加载控制器:Admin
+
+[ 2016-08-01T18:47:18+08:00 ] 127.0.0.1 /admin.php?c=menu&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::setStatus() should be compatible with Admin\Controller\CommonController::setStatus($data, $model) D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Admin\Controller\MenuController::listOrder() should be compatible with Admin\Controller\CommonController::listorder($model = '') D:\web\Matcms\Application\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [2048] Declaration of Common\Model\MenuModel::find() should be compatible with Think\Model::find($options = Array) D:\web\Matcms\Application\Common\Model\MenuModel.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `mat_menu` [ RunTime:0.0007s ]
+SQL: UPDATE `mat_menu` SET `name`='用户管理',`type`='1',`m`='admin',`c`='user',`f`='index',`status`='1' WHERE ( menu_id=13 ) [ RunTime:0.0005s ]
+
+[ 2016-08-01T18:47:45+08:00 ] 127.0.0.1 /admin.php?c=user&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0006s ]
+SQL: INSERT INTO `mat_admin` (`username`,`type`,`password`,`email`,`realname`) VALUES ('wgq','1','b286d1dbaf041bae4267f79264ca9640','1234','bao') [ RunTime:0.0004s ]
+
+[ 2016-08-01T18:50:00+08:00 ] 127.0.0.1 /admin.php?c=user&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0009s ]
+SQL: INSERT INTO `mat_admin` (`username`,`type`,`password`,`email`,`realname`) VALUES ('1','1','a0209b0f6a016196c9178386b7dea98b','1','1') [ RunTime:0.0003s ]
+
+[ 2016-08-01T18:51:14+08:00 ] 127.0.0.1 /admin.php?c=user&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: INSERT INTO `mat_admin` (`username`,`type`,`password`,`email`,`realname`) VALUES ('1','2','a0209b0f6a016196c9178386b7dea98b','1','1') [ RunTime:0.0003s ]
+
+[ 2016-08-01T18:51:57+08:00 ] 127.0.0.1 /admin.php?c=user&a=add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: INSERT INTO `mat_admin` (`username`,`type`,`password`,`email`,`realname`) VALUES ('1','2','a0209b0f6a016196c9178386b7dea98b','1','1') [ RunTime:0.0003s ]
+
+[ 2016-08-01T18:52:33+08:00 ] 127.0.0.1 /admin.php?c=user&a=setStatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+ERR: 非法操作:setStatus
+
+[ 2016-08-01T18:53:10+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0006s ]
+ERR: Think\Model:updateById方法不存在！
+
+[ 2016-08-01T18:53:13+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0005s ]
+ERR: Think\Model:updateById方法不存在！
+
+[ 2016-08-01T18:53:17+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: Think\Model:updateById方法不存在！
+
+[ 2016-08-01T18:53:26+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: Think\Model:updateById方法不存在！
+
+[ 2016-08-01T18:54:51+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mat_admin` SET `lastloginip`='2130706433',`admin_id`='1',`lastlogintime`='1470048891' WHERE ( admin_id =1 ) [ RunTime:0.0004s ]
+
+[ 2016-08-01T18:54:57+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="1" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `mat_admin` SET `lastloginip`='2130706433',`admin_id`='6',`lastlogintime`='1470048897' WHERE ( admin_id =6 ) [ RunTime:0.0005s ]
+
+[ 2016-08-01T18:55:10+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woy" ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: password D:\web\Matcms\Application\Admin\Controller\LoginController.class.php 第 34 行.
+
+[ 2016-08-01T18:55:13+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="wo" ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: password D:\web\Matcms\Application\Admin\Controller\LoginController.class.php 第 34 行.
+
+[ 2016-08-01T18:55:34+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `mat_admin` SET `lastloginip`='2130706433',`admin_id`='1',`lastlogintime`='1470048934' WHERE ( admin_id =1 ) [ RunTime:0.0004s ]
+
