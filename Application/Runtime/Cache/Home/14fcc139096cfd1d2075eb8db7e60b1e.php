@@ -129,131 +129,28 @@
       </div>
     </div>
   </div>
-</div>	
-<!-- banner -->
-<div class="banner">
-		<script src="/Public/js/responsiveslides.min.js"></script>
-  <script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	speed: 300,
-        manualControls: '#slider3-pager',
-      });
-    });
-  </script>
+</div>    
+<!-- about -->
+<div class="about">
+     <div class="container">
+         <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">About</li>
+         </ol>
+             <div class="about-grid">
+                <h2>文章标题</h2>
+                 <p class="abt-info">Nam blandit velit ut justo suscipit, volutpat auctor nisi blandit. Maecenas risus velit, lobortis id faucibus non, volutpat sed quam. Pellentesque interdum ex felis, 
+                 nec ultricies nibh dapibus id. Suspendisse potenti. Donec pretium et neque eget elementum. Etiam eleifend ante ac mauris tempor elementum. Nunc gravida, velit et finibus lobortis,
+                 dolor augue varius augue, eu rutrum quam orci sit amet sapien.</p>
+                 <p>Quisque bibendum nulla id suscipit sagittis. Phasellus blandit porttitor cursus. Duis vel orci eu nunc volutpat vehicula. Curabitur fermentum bibendum sem, nec pulvinar elit 
+                 blandit vel. Nulla ac gravida sapien. Duis elementum molestie tincidunt. Nunc luctus ullamcorper bibendum. Proin maximus magna a enim tristique lobortis. Aliquam erat volutpat. 
+                 Aenean luctus arcu ac magna euismod, a euismod ante venenatis. Nullam vehicula varius nunc vitae ultrices. Praesent varius elementum posuere.</p>
+                 <a href="#">Read More..</a>
+            </div>
+     </div>
+</div>
+<!-- //about -->
 
- <div class="slider">
-	  <div class="callbacks_container">
-	     <ul class="rslides" id="slider">
-	     <?php if(is_array($result['topPicNews'])): $i = 0; $__LIST__ = $result['topPicNews'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-	         <a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">
-				<img src="<?php echo ($vo['thumb']); ?>" style="width: 100%;">
-				<div class="banner-info" style="top: 60%;">
-					<h3><?php echo ($vo['title']); ?></h3>
-				</div>
-			 </a>
-	         </li><?php endforeach; endif; else: echo "" ;endif; ?>
-	     </ul>
-	  </div>
-  </div>
-<!---->
-</div>
-<!-- //banner -->
-<!-- content -->
-<!-- NEWS -->
-<div class="events-sec">
-     <div class="container">
-         <div class="ftrd-head text-center">
-             <h3> 新闻 | NEWS</h3>
-         </div>
-         <div class="event-grids"> 
-         <?php if(is_array($result['news'])): $i = 0; $__LIST__ = $result['news'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid">
-                 <div class="date">
-                     <h3><?php echo (date("d",$vo["create_time"])); ?></h3>
-                     <span><?php echo (date("m/Y",$vo["create_time"])); ?></span>
-                 </div>              
-                 <div class="event-info">
-                      <h4><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h4>
-                       <p>这里是内容<br/>这里是内容<br/></p>                   
-                 </div>
-                 <div class="clearfix"></div>                            
-             </div><?php endforeach; endif; else: echo "" ;endif; ?>
-             <div class="clearfix"></div>   
-         </div>
-     </div>
-</div>
-<!-- NEWS -->
-<!-- THECNOLOGY -->
-<div class="featured-news">
-     <div class="container">
-         <div class="ftrd-head text-center">
-             <h3>科技 | THECNOLOGY</h3>
-         </div>
-         <div class="event-grids">
-			<?php if(is_array($result['technology'])): $i = 0; $__LIST__ = $result['technology'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
-                 <div class="event-time text-center">
-                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
-                 </div>
-                 <div class="event-grid_pic">
-                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
-                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
-                     <p>这里是内容<br/>这里是内容<br/></p>
-                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
-                 </div>
-             <div class="clearfix"></div>
-             </div><?php endforeach; endif; else: echo "" ;endif; ?>
-         </div>
-     </div>
-</div>
-<!-- //THECNOLOGY -->
-<!-- AMUSEMENT -->
-<div class="featured-news">
-     <div class="container">
-         <div class="ftrd-head text-center">
-             <h3>娱乐 | AMUSEMENT</h3>
-         </div>
-         <div class="event-grids">
-			<?php if(is_array($result['amusement'])): $i = 0; $__LIST__ = $result['amusement'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
-                 <div class="event-time text-center">
-                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
-                 </div>
-                 <div class="event-grid_pic">
-                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
-                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
-                     <p>这里是内容<br/>这里是内容<br/></p>
-                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
-                 </div>
-             <div class="clearfix"></div>
-             </div><?php endforeach; endif; else: echo "" ;endif; ?>
-         </div>
-     </div>
-</div>
-<!-- //AMUSEMENT -->
-<!-- SPORTS -->
-<div class="featured-news">
-     <div class="container">
-         <div class="ftrd-head text-center">
-             <h3>体育 | SPORTS</h3>
-         </div>
-         <div class="event-grids">
-			<?php if(is_array($result['sport'])): $i = 0; $__LIST__ = $result['sport'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
-                 <div class="event-time text-center">
-                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
-                 </div>
-                 <div class="event-grid_pic">
-                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
-                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
-                     <p>这里是内容<br/>这里是内容<br/></p>
-                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
-                 </div>
-             <div class="clearfix"></div>
-             </div><?php endforeach; endif; else: echo "" ;endif; ?>
-         </div>
-     </div>
-</div>
-<!-- //SPORTS -->
-<!--- //content--->
 <?php
  function getRank() { $conds['status'] = 1; $news = D('News')->getRank($conds, 10); return $news; } $rankNews = getRank(); ?>
 <!-- content-bottom -->
@@ -274,27 +171,27 @@
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">mat cms</a></h4>
-                         <h5>科技 新闻 娱乐 体育 资讯整合</h5>
+                         <h5>mailto:</h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>
                  <div class="coch-grid chr">
                      <div class="coach-pic">
-                         <img src="/Public/images/李变蕊.jpg" alt=""/>
+                         <img src="/Public/images/吴高强.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
-                         <h4><a href="#">李变蕊</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h4><a href="#">吴高强</a></h4>
+                         <h5>mailto:</h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>
                  <div class="coch-grid">
                      <div class="coach-pic">
-                         <img src="/Public/images/吴高强.jpg" alt=""/>
+                         <img src="/Public/images/李变蕊.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
-                         <h4><a href="#">吴高强</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h4><a href="#">李变蕊</a></h4>
+                         <h5>Aenean vestibulum </h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>
@@ -307,7 +204,7 @@
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">谭满</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h5>mailto:</h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>
@@ -317,7 +214,7 @@
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">万辉</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h5>mailto:</h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>
@@ -327,7 +224,7 @@
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">韩玉琪</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h5>mailto:</h5>
                      </div>
                      <div class="clearfix"></div>
                  </div>

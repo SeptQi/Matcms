@@ -4,7 +4,7 @@ class IndexController extends CommonController
 {
     public function index()
     {
-        $rankNews = $this->getRank();
+        
         $topPicNews = D('Positioncontent')->select(array('status' => 1, 'position_id' => 1));
         $news       = D('Positioncontent')->select(array('status' => 1, 'position_id' => 2), 3);
         $technology = D('Positioncontent')->select(array('status' => 1, 'position_id' => 3), 3);

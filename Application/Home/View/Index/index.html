@@ -36,7 +36,7 @@
 <div class="events-sec">
      <div class="container">
          <div class="ftrd-head text-center">
-             <h3>NEWS</h3>
+             <h3> 新闻 | NEWS</h3>
          </div>
          <div class="event-grids"> 
          <volist name="result['news']" id="vo">         
@@ -61,7 +61,7 @@
 <div class="featured-news">
      <div class="container">
          <div class="ftrd-head text-center">
-             <h3>THECNOLOGY</h3>
+             <h3>科技 | THECNOLOGY</h3>
          </div>
          <div class="event-grids">
 			<volist name="result['technology']" id="vo">
@@ -86,7 +86,7 @@
 <div class="featured-news">
      <div class="container">
          <div class="ftrd-head text-center">
-             <h3>AMUSEMENT</h3>
+             <h3>娱乐 | AMUSEMENT</h3>
          </div>
          <div class="event-grids">
 			<volist name="result['amusement']" id="vo">
@@ -111,7 +111,7 @@
 <div class="featured-news">
      <div class="container">
          <div class="ftrd-head text-center">
-             <h3>SPORTS</h3>
+             <h3>体育 | SPORTS</h3>
          </div>
          <div class="event-grids">
 			<volist name="result['sport']" id="vo">
@@ -133,54 +133,4 @@
 </div>
 <!-- //SPORTS -->
 <!--- //content--->
-
-<!-- content-bottom -->
-<div class="content-info">
-	 <div class="container">
-		 <div class="content-bottom-grids">
-			 <div class="col-md-4 popular">	
-				 <h3>NEWEST</h3>
-				 <ul>
-				 	<volist name="result['rankNews']" id="vo">
-					 <li><a href="/index.php?c=detail&id={$vo['news_id']}">{$vo['title']}</a></li>
-					</volist>
-				 </ul>
-			 </div>
-			 <div class="col-md-4 welcome-pic">
-				 <h3>ABOUT</h3>
-				 <h4>Morbi sed arcu mollis, elementum erat venenatis, tincidunt tellus.</h4>
-				 <img src="__PUBLIC__/images/cnt.ab.jpg" alt=""/>
-				 <p>Aenean ut condimentum magna, mattis pretium massa. Sed sollicitudin ullamcorper auctor. Duis vestibulum velit id augue pulvinar egestas. 
-				 Morbi sed orci auctor, feugiat felis at, fermentum magna. In ac egestas lectus.</p>
-			</div>
-			<div class="col-md-4 coach">
-				 <h3>OUR COACHES</h3>
-				 <div class="coch-grid chr">
-					 <div class="coach-pic">
-						 <img src="__PUBLIC__/images/ch1.jpg" alt=""/>
-					 </div>
-					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-				 <div class="coch-grid">
-					 <div class="coach-pic">
-						 <img src="__PUBLIC__/images/ch2.jpg" alt=""/>
-					 </div>
-					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-			</div>
-			<div class="clearfix"></div>
-		 </div>
-	 </div>
-</div>
-<!-- //content-bottom -->
 <include file="Common/footer" />
