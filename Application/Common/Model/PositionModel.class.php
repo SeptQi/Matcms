@@ -59,4 +59,11 @@ class PositionModel extends Model
         $conditions = array('status' => 1);
         return $list = $this->_db->where($conditions)->order('id')->select();
     }
+    public function find($id)
+    {
+        if (!$id || !is_numeric($id)) {
+            throw_exception('id不合法');
+        }
+        return $this->_db->find($id);
+    }
 }

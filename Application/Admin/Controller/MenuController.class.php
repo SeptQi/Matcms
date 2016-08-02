@@ -33,6 +33,13 @@ class MenuController extends CommonController
         $page = isset($_REQUEST['p']) ? $_REQUEST['p'] : 1;
         $pageSize = isset($_REQUEST['pageSize']) ? $_REQUEST['pageSize'] : 5;
         $menus = D('Menu')->getMenus($data, $page, $pageSize);
+        foreach ($menus as $k => $v) {
+            $pos_id = $v['pos_id'];
+            if ($pos_id) {
+                $pos = D('position')->find($pos_id);
+                $menus[$k]['posname'] = $pos['name'];     
+            }
+        }
         $menusCount = D('Menu')->getMenuCount($data);
         $res = new \Admin\Vendor\Page($menusCount, $pageSize);
         $pageRes = $res->show();

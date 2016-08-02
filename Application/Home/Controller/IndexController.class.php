@@ -10,6 +10,7 @@ class IndexController extends CommonController
         $technology = D('Positioncontent')->select(array('status' => 1, 'position_id' => 3), 3);
         $amusement  = D('Positioncontent')->select(array('status' => 1, 'position_id' => 4), 3);
         $sport      = D('Positioncontent')->select(array('status' => 1, 'position_id' => 5), 3);
+        $navs = D('Menu')->getBarMenus();
         $this->assign('result', array(
             'topPicNews' => $topPicNews,
             'news'       => $news,
@@ -17,6 +18,7 @@ class IndexController extends CommonController
             'amusement'  => $amusement,
             'sport'      => $sport,
             'rankNews'   => $rankNews,
+            'navs'       => $navs,
             ));
         $this->display();
         //$this->show();

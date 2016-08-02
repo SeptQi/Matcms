@@ -374,7 +374,8 @@ p.last-info{
 }
 .coach{
 	background:#2c3134;
-	padding:25px 25px 30px 25px;
+	padding:25px;
+    margin-top: 30px;
 }
 .chr{
 	margin:2em 0;
@@ -419,8 +420,9 @@ font-size: 0.95em;
 	padding:2em 0;
 }
 .copywrite {
-	float:left;
 	padding-top: 5px;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
 }
 .footer-menu{
 	float:right;
@@ -457,17 +459,12 @@ font-size: 0.95em;
 .about-grids{
 	margin-top:2em;
 }
-.about-grid h3{
+.about-grid h2{
 	color:#0070B6;
-	font-size:1.5em;
 	font-weight:500;
-	margin-bottom:0.5em;
+	margin:2.5em;
 	font-family: 'Audiowide', cursive;
-}
-.about-grid{
-	width:100%;
-	float:left;
-	margin-right:2%;
+    text-align: center;
 }
 .about-pic{
 	float:left;
@@ -477,9 +474,10 @@ font-size: 0.95em;
 	width:100%;
 }
 .about-grid p{
-    line-height: 1.8em;
-  color: #999;
-  margin-top:1em;
+    line-height:1.8em;
+    margin-top:1em;
+    padding:10px;
+    font-size: 18px;
 }
 p.abt-info{
 	color:#999;

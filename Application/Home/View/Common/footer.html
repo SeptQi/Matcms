@@ -1,26 +1,11 @@
-<?php
-    function getRank()
-    {
-        $conds['status'] = 1;
-        $news = D('News')->getRank($conds, 10);
-        return $news;
-    }
-$rankNews = getRank();
-?>
 <!-- content-bottom -->
 <div class="content-info">
      <div class="container">
+      <div class="ftrd-head text-center">
+             <h3> 关于我们 | ABOUT US</h3>
+         </div>
          <div class="content-bottom-grids">
-             <div class="col-md-4 popular"> 
-                 <h3>NEWEST</h3>
-                 <ul>
-                    <volist name="rankNews" id="vo">
-                     <li><a href="/index.php?c=detail&id={$vo['news_id']}">{$vo['title']}</a></li>
-                    </volist>
-                 </ul>
-             </div>
             <div class="col-md-4 coach">
-                 <h3> ABOUT US </h3>
                  <div class="coch-grid chr">
                      <div class="coach-pic">
                          <img src="__PUBLIC__/images/logo_square.png" alt=""/>
@@ -28,59 +13,66 @@ $rankNews = getRank();
                      <div class="coach-pic-info">
                          <h4><a href="#">mat cms</a></h4>
                          <h5>科技 新闻 娱乐 体育 资讯整合</h5>
+                         <p>“基于ThinkPHP 小组项目”</p>
                      </div>
                      <div class="clearfix"></div>
                  </div>
-                 <div class="coch-grid chr">
+                 <div class="coch-grid">
                      <div class="coach-pic">
                          <img src="__PUBLIC__/images/李变蕊.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">李变蕊</a></h4>
-                         <h5>“每人，一句话”</h5>
-                     </div>
-                     <div class="clearfix"></div>
-                 </div>
-                 <div class="coch-grid">
-                     <div class="coach-pic">
-                         <img src="__PUBLIC__/images/吴高强.jpg" alt=""/>
-                     </div>
-                     <div class="coach-pic-info">
-                         <h4><a href="#">吴高强</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h5>主要职责</h5>
+                         <p>“每人一句话”</p>
                      </div>
                      <div class="clearfix"></div>
                  </div>
             </div>
             <div class="col-md-4 coach">
-                 <h3> M A T </h3>
-                 <div class="coch-grid chr">
+                <div class="coch-grid chr">
+                         <div class="coach-pic">
+                             <img src="__PUBLIC__/images/韩玉琪.jpg" alt=""/>
+                         </div>
+                         <div class="coach-pic-info">
+                             <h4><a href="#">韩玉琪</a></h4>
+                             <h5>主要职责</h5>
+                             <p>“右边那个，亲一口”</p>
+                         </div>
+                         <div class="clearfix"></div>
+                </div>
+                 <div class="coch-grid">
                      <div class="coach-pic">
                          <img src="__PUBLIC__/images/谭满.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
                          <h4><a href="#">谭满</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h5>主要职责</h5>
+                         <p>“每人，一句话”</p>
                      </div>
                      <div class="clearfix"></div>
                  </div>
+            </div>
+            <div class="col-md-4 coach">
                  <div class="coch-grid chr">
                      <div class="coach-pic">
-                         <img src="__PUBLIC__/images/万辉.jpg" alt=""/>
+                         <img src="__PUBLIC__/images/吴高强.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
-                         <h4><a href="#">万辉</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h4><a href="#">吴高强</a></h4>
+                         <h5>主要职责</h5>
+                         <p>“切，不要！”</p>
                      </div>
                      <div class="clearfix"></div>
                  </div>
                  <div class="coch-grid">
                      <div class="coach-pic">
-                         <img src="__PUBLIC__/images/韩玉琪.jpg" alt=""/>
+                         <img src="__PUBLIC__/images/万辉.jpg" alt=""/>
                      </div>
                      <div class="coach-pic-info">
-                         <h4><a href="#">韩玉琪</a></h4>
-                         <h5>“每人，一句话”</h5>
+                         <h4><a href="#">万辉</a></h4>
+                         <h5>主要职责</h5>
+                         <p>“每人，一句话”</p>
                      </div>
                      <div class="clearfix"></div>
                  </div>
@@ -94,17 +86,7 @@ $rankNews = getRank();
 <div class="footer">
      <div class="container">
          <div class="copywrite">
-             <p>Copyright &copy; 2015.Company name All rights reserved.</p>
-         </div>
-         <div class="footer-menu">
-             <ul>
-                 <li class="active"><a href="{:U('index')}">首页</a></li>
-                 <li><a href="{:U('keji')}">科技</a></li>
-                 <li><a href="{:U('xinwen')}">新闻</a></li>
-                 <li><a href="{:U('tiyu')}">体育</a></li>
-                 <li><a href="{:U('yole')}">娱乐</a></li>
-                 <li><a href="{:U('join')}">加入我们</a></li>
-             </ul>
+             <p>Copyright &copy; 2016 . MAT Team All rights reserved.</p>
          </div>
          <div class="clearfix"></div>
      </div>
@@ -112,3 +94,6 @@ $rankNews = getRank();
 <!-- //footer -->
 </body>
 </html>
+<script type="text/javascript">
+$(".pinned").pin({containerSelector: "#container", minWidth: 940});
+</script>

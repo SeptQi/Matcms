@@ -60,6 +60,9 @@
                                 <th>菜单名</th>
                                 <th>模块名</th>
                                 <th>类型</th>
+                                <if  condition="$menus[0]['posname']">
+                                <th>推荐位位置</th>
+                                </if >
                                 <th>状态</th>
                                 <th>操作</th>
                             </tr>
@@ -72,6 +75,9 @@
                                     <td>{$menu.name}</td>
                                     <td>{$menu.m}</td>
                                     <td>{$menu.type|getMenuType}</td>
+                                    <if condition="$menu.posname ">
+                                    <td>{$menu.posname}</td>
+                                    </if>
                                     <td><span attr-status="<if condition="$menu['status'] eq 1">0<else/>1</if>"  attr-id="{$menu['menu_id']}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$menu['status']|status}</span></td>
                                     <td>
                                         <span class="sing_cursor glyphicon glyphicon-edit" id="singcms-edit" aria-hidden="true" attr-a="menu" attr-id="{$menu.menu_id}"></span>
