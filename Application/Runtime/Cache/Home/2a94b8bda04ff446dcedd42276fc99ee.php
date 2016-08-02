@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); $config = D('Basic')->select(); $navs = D('Menu')->getBarMenus(); ?>
+<?php if (!defined('THINK_PATH')) exit(); $config = D('Basic')->select(); $navs = D('Menu')->getBarMenus(); $catId = $_GET['id'] ? $_GET['id'] : 0; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,12 +30,14 @@
          <div class="logo">
                <h1><a href="<?php echo U('index');?>">MAT CMS</a></h1>
          </div> 
-         <div class="top-menu">
-              <ul>
-                <li class="<?php if($result['catId'] == 0): ?>active<?php endif; ?>"><a href="/">首页</a></li>
-                <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li class="<?php if($nav['menu_id'] == $result['catid']): ?>active<?php endif; ?>"><a href="/index.php?c=cat&id=<?php echo ($nav['menu_id']); ?>"><?php echo ($nav['name']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-             </ul>           
-         </div>         
+          <div class="pull-right">
+               <ul class="nav nav-pills">
+                 <li role="presentation" <?php if($catId == 0): ?>class="active"<?php endif; ?> ><a href="/">首页</a></li>
+                 <?php if(is_array($navs)): $i = 0; $__LIST__ = $navs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?><li role="presentation" <?php if($catId == $nav["menu_id"] ): ?>class="active"<?php endif; ?> >
+                       <a href="/index.php?c=cat&id=<?php echo ($nav['menu_id']); ?>"><?php echo ($nav["name"]); ?></a>
+                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
+              </ul>           
+          </div>
          <!-- script-for-menu -->
          <script>
                 $("span.menu").click(function(){
@@ -156,103 +158,183 @@
 	  </div>
   </div>
 <!---->
-	 <div class="banner-bottom-grids">
-		 <div class="container">
-			 <div class="col-md-6 banner-text-info clr1">
-				 <i class="icon2"></i>
-				 <div class="bnr-text">				 
-					 <h3>NEWS</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
-				 </div>
-			 </div>
-			 <div class="col-md-6 banner-text-info clr2">	
-				 <i class="icon1"></i>
-				 <div class="bnr-text">
-					 <h3>SCIENCE & TECHNOLOGY</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
-				 </div>
-			 </div>
-			 <div class="clearfix"></div>
-			 
-			 <div class="col-md-6 banner-text-info clr3 btm">	
-				 <i class="icon3"></i>
-				 <div class="bnr-text">
-					 <h3>ENTERTAINMENT</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
-				 </div>
-			 </div>
-			 <div class="col-md-6 banner-text-info clr4 btm">	
-				 <i class="icon4"></i>
-				 <div class="bnr-text">
-					 <h3>COURSE</h3>
-					 <p>Vestibulum malesuada nisi sit amet justo ullamcorper, non convallis justo consequat Integer et urna bibendum elit accumsan interdum.</p>
-				 </div>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-	 </div>
 </div>
 <!-- //banner -->
-
 <!-- content -->
-<div class="content">
-	 <div class="container">
-		 <div class="content-grids">
-		 	<?php if(is_array($result['topSmallNews1'])): $i = 0; $__LIST__ = $result['topSmallNews1'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 content-grid1">
-				 <img src="<?php echo ($vo['thumb']); ?>"/>
-				 <h3><?php echo ($vo['title']); ?></h3>
-				 <p>这里是内容<br/>这里是内容<br/></p>
-				 <a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a>
-			 </div><?php endforeach; endif; else: echo "" ;endif; ?>
-		 </div>
-	 </div>
+<!-- NEWS -->
+<div class="events-sec">
+     <div class="container">
+         <div class="ftrd-head text-center">
+             <h3> 新闻 | NEWS</h3>
+         </div>
+         <div class="event-grids"> 
+         <?php if(is_array($result['news'])): $i = 0; $__LIST__ = $result['news'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid">
+                 <div class="date">
+                     <h3><?php echo (date("d",$vo["create_time"])); ?></h3>
+                     <span><?php echo (date("m/Y",$vo["create_time"])); ?></span>
+                 </div>              
+                 <div class="event-info">
+                      <h4><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h4>
+                       <p>这里是内容<br/>这里是内容<br/></p>                   
+                 </div>
+                 <div class="clearfix"></div>                            
+             </div><?php endforeach; endif; else: echo "" ;endif; ?>
+             <div class="clearfix"></div>   
+         </div>
+     </div>
 </div>
+<!-- NEWS -->
+<!-- THECNOLOGY -->
+<div class="featured-news">
+     <div class="container">
+         <div class="ftrd-head text-center">
+             <h3>科技 | THECNOLOGY</h3>
+         </div>
+         <div class="event-grids">
+			<?php if(is_array($result['technology'])): $i = 0; $__LIST__ = $result['technology'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
+                 <div class="event-time text-center">
+                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
+                 </div>
+                 <div class="event-grid_pic">
+                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
+                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
+                     <p>这里是内容<br/>这里是内容<br/></p>
+                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
+                 </div>
+             <div class="clearfix"></div>
+             </div><?php endforeach; endif; else: echo "" ;endif; ?>
+         </div>
+     </div>
+</div>
+<!-- //THECNOLOGY -->
+<!-- AMUSEMENT -->
+<div class="featured-news">
+     <div class="container">
+         <div class="ftrd-head text-center">
+             <h3>娱乐 | AMUSEMENT</h3>
+         </div>
+         <div class="event-grids">
+			<?php if(is_array($result['amusement'])): $i = 0; $__LIST__ = $result['amusement'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
+                 <div class="event-time text-center">
+                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
+                 </div>
+                 <div class="event-grid_pic">
+                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
+                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
+                     <p>这里是内容<br/>这里是内容<br/></p>
+                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
+                 </div>
+             <div class="clearfix"></div>
+             </div><?php endforeach; endif; else: echo "" ;endif; ?>
+         </div>
+     </div>
+</div>
+<!-- //AMUSEMENT -->
+<!-- SPORTS -->
+<div class="featured-news">
+     <div class="container">
+         <div class="ftrd-head text-center">
+             <h3>体育 | SPORTS</h3>
+         </div>
+         <div class="event-grids">
+			<?php if(is_array($result['sport'])): $i = 0; $__LIST__ = $result['sport'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4 event-grid-sec">
+                 <div class="event-time text-center">
+                     <p><?php echo (date("Y-m-d",$vo["create_time"])); ?></p>
+                 </div>
+                 <div class="event-grid_pic">
+                     <img src="<?php echo ($vo['thumb']); ?>" class="img-responsive" style="height: 140px;" />
+                     <h3><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></h3>
+                     <p>这里是内容<br/>这里是内容<br/></p>
+                     <div class="more"><a target="_blank" href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>">Read More..</a></div>
+                 </div>
+             <div class="clearfix"></div>
+             </div><?php endforeach; endif; else: echo "" ;endif; ?>
+         </div>
+     </div>
+</div>
+<!-- //SPORTS -->
 <!--- //content--->
+<?php
+ function getRank() { $conds['status'] = 1; $news = D('News')->getRank($conds, 10); return $news; } $rankNews = getRank(); ?>
 <!-- content-bottom -->
 <div class="content-info">
-	 <div class="container">
-		 <div class="content-bottom-grids">
-			 <div class="col-md-4 popular">	
-				 <h3>NEWEST</h3>
-				 <ul>
-				 	<?php if(is_array($result['rankNews'])): $i = 0; $__LIST__ = $result['rankNews'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-				 </ul>
-			 </div>
-			 <div class="col-md-4 welcome-pic">
-				 <h3>ABOUT</h3>
-				 <h4>Morbi sed arcu mollis, elementum erat venenatis, tincidunt tellus.</h4>
-				 <img src="/Public/images/cnt.ab.jpg" alt=""/>
-				 <p>Aenean ut condimentum magna, mattis pretium massa. Sed sollicitudin ullamcorper auctor. Duis vestibulum velit id augue pulvinar egestas. 
-				 Morbi sed orci auctor, feugiat felis at, fermentum magna. In ac egestas lectus.</p>
-			</div>
-			<div class="col-md-4 coach">
-				 <h3>OUR COACHES</h3>
-				 <div class="coch-grid chr">
-					 <div class="coach-pic">
-						 <img src="/Public/images/ch1.jpg" alt=""/>
-					 </div>
-					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-				 <div class="coch-grid">
-					 <div class="coach-pic">
-						 <img src="/Public/images/ch2.jpg" alt=""/>
-					 </div>
-					 <div class="coach-pic-info">
-						 <h4><a href="#">Phasellus at Tellus</a></h4>
-						 <h5>Aenean vestibulum </h5>
-						 <p>Donec ornare massa at velit fringilla, condimentum magna ornare tincidunt nulla dignissim.</p>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-			</div>
-			<div class="clearfix"></div>
-		 </div>
-	 </div>
+     <div class="container">
+         <div class="content-bottom-grids">
+             <div class="col-md-4 popular"> 
+                 <h3>NEWEST</h3>
+                 <ul>
+                    <?php if(is_array($rankNews)): $i = 0; $__LIST__ = $rankNews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="/index.php?c=detail&id=<?php echo ($vo['news_id']); ?>"><?php echo ($vo['title']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                 </ul>
+             </div>
+            <div class="col-md-4 coach">
+                 <h3> ABOUT US </h3>
+                 <div class="coch-grid chr">
+                     <div class="coach-pic">
+                         <img src="/Public/images/logo_square.png" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">mat cms</a></h4>
+                         <h5>科技 新闻 娱乐 体育 资讯整合</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+                 <div class="coch-grid chr">
+                     <div class="coach-pic">
+                         <img src="/Public/images/李变蕊.jpg" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">李变蕊</a></h4>
+                         <h5>“每人，一句话”</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+                 <div class="coch-grid">
+                     <div class="coach-pic">
+                         <img src="/Public/images/吴高强.jpg" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">吴高强</a></h4>
+                         <h5>“每人，一句话”</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+            </div>
+            <div class="col-md-4 coach">
+                 <h3> M A T </h3>
+                 <div class="coch-grid chr">
+                     <div class="coach-pic">
+                         <img src="/Public/images/谭满.jpg" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">谭满</a></h4>
+                         <h5>“每人，一句话”</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+                 <div class="coch-grid chr">
+                     <div class="coach-pic">
+                         <img src="/Public/images/万辉.jpg" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">万辉</a></h4>
+                         <h5>“每人，一句话”</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+                 <div class="coch-grid">
+                     <div class="coach-pic">
+                         <img src="/Public/images/韩玉琪.jpg" alt=""/>
+                     </div>
+                     <div class="coach-pic-info">
+                         <h4><a href="#">韩玉琪</a></h4>
+                         <h5>“每人，一句话”</h5>
+                     </div>
+                     <div class="clearfix"></div>
+                 </div>
+            </div>
+            <div class="clearfix"></div>
+         </div>
+     </div>
 </div>
 <!-- //content-bottom -->
 <!--footer-->

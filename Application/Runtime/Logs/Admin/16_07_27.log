@@ -1,7 +1,0 @@
-[ 2016-07-27T00:32:03+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
-SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0315s ]
-SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0039s ]
-

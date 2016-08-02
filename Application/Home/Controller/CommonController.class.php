@@ -27,16 +27,6 @@ class CommonController extends Controller
         parent::__construct();
     }
     /**
-     * 获取文章排行
-     * @return array
-     */
-    public function getRank()
-    {
-        $conds['status'] = 1;
-        $news = D('News')->getRank($conds, 8);
-        return $news;
-    }
-    /**
      * 空操作方法
      */
     public function _empty()

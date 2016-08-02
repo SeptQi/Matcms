@@ -373,7 +373,7 @@ p.last-info{
   color: #999;
 }
 .coach{
-	background:#000;
+	background:#2c3134;
 	padding:25px 25px 30px 25px;
 }
 .chr{
@@ -465,7 +465,7 @@ font-size: 0.95em;
 	font-family: 'Audiowide', cursive;
 }
 .about-grid{
-	width:58%;
+	width:100%;
 	float:left;
 	margin-right:2%;
 }
@@ -477,7 +477,7 @@ font-size: 0.95em;
 	width:100%;
 }
 .about-grid p{
-	line-height: 1.8em;
+    line-height: 1.8em;
   color: #999;
   margin-top:1em;
 }
@@ -826,7 +826,7 @@ margin-bottom:3%;
   color: #999;
 }
 .ftrd-head {
-	margin-top:4em;
+	margin-top:2em;
 }
 .ftrd-head h3{
 	color: #0070B6;

@@ -1,6 +1,7 @@
 <?php 
     $config = D('Basic')->select();
     $navs = D('Menu')->getBarMenus();
+    $catId = $_GET['id'] ? $_GET['id'] : 0;
  ?>
 <!DOCTYPE html>
 <html>
@@ -33,14 +34,16 @@
          <div class="logo">
                <h1><a href="{:U('index')}">MAT CMS</a></h1>
          </div> 
-         <div class="top-menu">
-              <ul>
-                <li class="<if condition="$result['catId'] == 0">active</if>"><a href="/">首页</a></li>
-                <volist name="navs" id="nav">
-                    <li class="<if condition="$nav['menu_id'] eq $result['catid']">active</if>"><a href="/index.php?c=cat&id={$nav['menu_id']}">{$nav['name']}</a></li>
-                </volist>
-             </ul>           
-         </div>         
+          <div class="pull-right">
+               <ul class="nav nav-pills">
+                 <li role="presentation" <if condition="$catId eq 0">class="active"</if> ><a href="/">首页</a></li>
+                 <volist name="navs" id="nav">
+                     <li role="presentation" <if condition="$catId eq $nav.menu_id ">class="active"</if> >
+                       <a href="/index.php?c=cat&id={$nav['menu_id']}">{$nav.name}</a>
+                     </li>
+                 </volist>
+              </ul>           
+          </div>
          <!-- script-for-menu -->
          <script>
                 $("span.menu").click(function(){
