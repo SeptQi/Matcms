@@ -48,3 +48,11 @@ var login = {
         }, 'JSON');
     }
 };
+
+/**
+ * 前台用户退出登录
+ */
+/*$("#logout").on('click',function(){
+    var url = '/index.php?c=index&a=loginout';
+    window.location.href = url;
+});*/

@@ -25,8 +25,27 @@ class IndexController extends CommonController
     }
     public function check()
     {
+        $_POST['password'] = md5($_POST['password'].C('MD5_PRE'));
+        $admin = D('Admin');
+        $res = $admin -> checkUser($_POST);
+        if(!$res){
+            return show(0,'用户不存在，请先注册');
+        }
+        if($res['password'] != $_POST['password']){
+            return show(0,'密码错误');
+        }
+        session('userInfo',$res);
         return show(1, '登陆成功');
     }
+
+    // 前台用户登出操作
+    public function loginout()
+    {
+        session('userInfo', null);
+        $this->redirect('/index.php');
+        return show(1,'退出登录成功');
+    }
+
     public function insert()
     {
         return show(1, '注册成功');
