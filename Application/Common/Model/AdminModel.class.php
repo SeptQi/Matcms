@@ -19,6 +19,7 @@ class AdminModel extends Model
         $ret = $this->_db->where('username="' . $username . '"')->find();
         return $ret;
     }
+    
     public function insert($data = array()){
         if(!$data || !is_array($data)){
             return 0;

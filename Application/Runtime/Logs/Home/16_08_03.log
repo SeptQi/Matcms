@@ -565,3 +565,77 @@ INFO: [ app_begin ] --END-- [ RunTime:0.004456s ]
 SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0019s ]
 SQL: SELECT * FROM `mat_admin` WHERE ( username = "woya" ) LIMIT 1   [ RunTime:0.0010s ]
 
+[ 2016-08-03T21:38:42+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005464s ]
+
+[ 2016-08-03T21:39:21+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+
+[ 2016-08-03T21:40:41+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011704s ]
+
+[ 2016-08-03T21:40:43+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002637s ]
+
+[ 2016-08-03T21:41:52+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004514s ]
+
+[ 2016-08-03T21:41:57+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+
+[ 2016-08-03T21:42:35+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002848s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username = "123" ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-08-03T21:42:44+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007320s ]
+
+[ 2016-08-03T23:53:54+08:00 ] 127.0.0.1 /index.php?c=index&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004173s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0759s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username = "woya" ) LIMIT 1   [ RunTime:0.1255s ]
+
+[ 2016-08-03T23:54:38+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004521s ]
+
+[ 2016-08-03T23:54:41+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002952s ]
+
+[ 2016-08-03T23:54:42+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+
+[ 2016-08-03T23:55:59+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+
+[ 2016-08-03T23:58:39+08:00 ] 127.0.0.1 /index.php?c=index&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+

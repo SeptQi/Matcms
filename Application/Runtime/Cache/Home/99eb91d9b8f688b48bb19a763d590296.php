@@ -60,22 +60,20 @@
                 <input type="text" value="" placeholder="Search...">
                 <input type="submit" value="">
             </form>
-     </div>     
+     </div>  
 
-      
-    <?php if($Think.session): ?>
-        欢迎回来：<?php echo ($_SESSION['userInfo']['username']); ?>
-        <a href="/index.php?c=index&a=loginout"><button class="btn btn-primary" id='logout'>退出登录</button></a>
-      <?php else: ?>
-        
-        <div class="social">  
-          <button class="btn btn-primary" data-toggle="modal" data-target="#login" logintype="1">登录</button>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <button class="btn btn-primary" data-toggle="modal" data-target="#signin" logintype="0">注册</button>          
-       </div><?php endif; ?>
+      <?php if($_SESSION['userInfo']['username']): ?><div class="social">  
+              <span class="btn btn-primary">欢迎回来：<?php echo ($_SESSION['userInfo']['username']); ?></span>
+              <a href='/index.php?c=index&a=loginout'><button class="btn btn-primary">退出登录</button></a>
+             </div>
+        <?php else: ?>
+          <div class="social">  
+              <button class="btn btn-primary" data-toggle="modal" data-target="#login" logintype="1">登录</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button class="btn btn-primary" data-toggle="modal" data-target="#signin" logintype="0">注册</button>          
+           </div><?php endif; ?>
 
-     
-
+    
 
         <div class="clearfix"></div>
         </div>
@@ -96,7 +94,7 @@
           </div>
           <div class="form-group">
             <label for="message-text" class="control-label">密码：</label>
-            <input type="text" class="form-control" name="loginpassword">
+            <input type="password" class="form-control" name="loginpassword">
           </div>
         </form>
       </div>
@@ -113,7 +111,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">欢迎注册</h4>
+        <h4 class="modal-title" id="exampleModalLabel">快速注册</h4>
       </div>
       <div class="modal-body">
         <form>
@@ -123,13 +121,13 @@
           </div>
           <div class="form-group">
             <label for="message-text" class="control-label">密码：</label>
-            <input type="text" class="form-control" name="signinpassword">
+            <input type="password" class="form-control" name="signinpassword">
           </div>
-          <div class="form-group" id="#asd">
+          <div class="form-group">
             <label for="message-text" class="control-label">昵称：</label>
             <input type="text" class="form-control" name="realname">
           </div>
-          <div class="form-group" id="#email">
+          <div class="form-group">
             <label for="message-text" class="control-label">邮箱：</label>
             <input type="text" class="form-control" name="email">
           </div>
