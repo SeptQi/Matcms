@@ -23,16 +23,12 @@ class PositioncontentController extends CommonController
 {
     public function index()
     {
-        //查找所有状态为1的推荐位数据
         $positions = D('Position')->getNormalPositions();
-        //添加条件
         $data['status'] = array('neq', -1);
-        // 搜索用，判断输入框是否有内容,并去除首尾空格,存入$data 作为条件
         if ($_GET['title']) {
             $data['title'] = trim($_GET['title']);
             $title = $data['title'];
         }
-        
         $data['position_id'] = $_GET['position_id'] ? $_GET['position_id'] : $positions[0]['id']; 
         $positionid = $data['position_id'];
         //分页
