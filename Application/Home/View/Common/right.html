@@ -14,7 +14,7 @@ $rankNews = getRank();
                  <h3>NEWEST</h3>
                  <ul>
                     <volist name="rankNews" id="vo">
-                     <li><a href="/index.php?c=detail&id={$vo['news_id']}">{$vo['title']}</a></li>
+                     <li><a href="/index.php?c=detail&id={$vo['news_id']}&catid={$vo['catid']}">{$vo['title']}</a></li>
                     </volist>
                  </ul>
              </div>

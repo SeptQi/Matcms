@@ -5,24 +5,28 @@ class IndexController extends CommonController
 {
     public function index()
     {
-        
-        $topPicNews = D('Positioncontent')->select(array('status' => 1, 'position_id' => 1));
-        $news       = D('Positioncontent')->select(array('status' => 1, 'position_id' => 2), 3);
-        $technology = D('Positioncontent')->select(array('status' => 1, 'position_id' => 3), 3);
-        $amusement  = D('Positioncontent')->select(array('status' => 1, 'position_id' => 4), 3);
-        $sport      = D('Positioncontent')->select(array('status' => 1, 'position_id' => 5), 3);
         $navs = D('Menu')->getBarMenus();
-        $this->assign('result', array(
+        foreach ($navs as $key => $value) {
+            $catid = $value['menu_id'];
+            $pos_name = $value['name'];
+            $pos_id = $value['pos_id'];
+            $contents[$pos_name] = D('Positioncontent')->select(array('status' => 1, 'position_id' => $pos_id), 3);
+            foreach ($contents[$pos_name] as $key => $value) {
+                $contents[$pos_name][$key]['content'] = strip_tags(htmlspecialchars_decode(D('NewsContent')->find($value['news_id'])['content']));
+                $contents[$pos_name][$key]['catid'] = $catid;
+            }
+        }
+        $topPicNews = D('Positioncontent')->select(array('status' => 1, 'position_id' => 1));
+        $config = D('Basic')->select();
+        $catId = $_GET['id'] ? $_GET['id'] : 0;
+        $this->assign(array(
             'topPicNews' => $topPicNews,
-            'news'       => $news,
-            'technology' => $technology,
-            'amusement'  => $amusement,
-            'sport'      => $sport,
-            'rankNews'   => $rankNews,
+            'contents'   => $contents,
             'navs'       => $navs,
+            'config'     => $config,
+            'catId'      => $catId,
             ));
         $this->display();
-        //$this->show();
     }
     public function check()
     {
@@ -62,5 +66,4 @@ class IndexController extends CommonController
         }
         return show(1, '注册成功');
     }
-
 }
