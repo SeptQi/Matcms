@@ -1,0 +1,8 @@
+[ 2016-08-03T20:09:53+08:00 ] 127.0.0.1 /admin.php?c=login&a=check
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `mat_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `mat_admin` WHERE ( username="woya" ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `mat_admin` SET `lastloginip`='2130706433',`admin_id`='1',`lastlogintime`='1470226193' WHERE ( admin_id =1 ) [ RunTime:0.0360s ]
+
