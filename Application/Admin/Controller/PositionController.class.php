@@ -27,8 +27,8 @@ class PositionController extends CommonController
         $pageSize = 5;
         $position = D('Position')->getPosition($conds, $page, $pageSize);
         $count = D('Position')->getPositionCount();
-        //dump($count);die;
         $res = new \Think\Page($count, $pageSize);
+        // 分页按钮
         $pageres = $res->show();
         $this->assign(array(
             'pageres'     => $pageres,
@@ -37,6 +37,7 @@ class PositionController extends CommonController
             ));
         $this->display();
     }
+
     public function setStatus()
     {
         $data = array(
@@ -45,6 +46,7 @@ class PositionController extends CommonController
             );
         return parent::setStatus($data, 'Position');
     }
+    
     public function listorder()
     {
         return parent::listorder('Position');
