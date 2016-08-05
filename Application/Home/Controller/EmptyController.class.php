@@ -19,9 +19,19 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class EmptyController extends Controller {
+class EmptyController extends Controller
+{
     public function _empty(){
+        //header.html需要数据
+        $navs = D('Menu')->getBarMenus();
+        $config = D('Basic')->select();
+        $catId = $_GET['id'] ? $_GET['id'] : 0;
         //$this->display();
+        $this->assign(array(
+            'navs'    => $navs,
+            'config'  => $config,
+            'catId'   => $catId,
+            ));
         $this->show();
     }
 }
