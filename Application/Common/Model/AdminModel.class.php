@@ -32,4 +32,12 @@ class AdminModel extends Model
         }
         return $this->_db->where('admin_id ='.$data['admin_id'])->save($data);
     }
+
+    public function checkUser($data)
+    {
+        if(!$data || !is_array($data)){
+            throw_exception('数据不合法');
+        }
+        return $this -> _db -> where('username = "'.$data['username'].'"') -> find();
+    }
 }

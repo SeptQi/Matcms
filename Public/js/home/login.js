@@ -48,3 +48,14 @@ var login = {
         }, 'JSON');
     }
 };
+
+<<<<<<< HEAD
+=======
+/**
+ * 前台用户退出登录
+ */
+/*$("#logout").on('click',function(){
+    var url = '/index.php?c=index&a=loginout';
+    window.location.href = url;
+});*/
+>>>>>>> parent of dde435d... 添加了前台注册功能，并修改了小部分细节

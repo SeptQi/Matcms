@@ -8,7 +8,7 @@ return array(
     'DB_TYPE' => 'mysql',
     'DB_HOST' => 'localhost',
     'DB_USER' => 'root',
-    'DB_PWD'  => '1234',
+    'DB_PWD'  => 'a',
     'DB_PORT' => '3306',
     'DB_NAME' => 'mat',
     'DB_CHARSET' => 'UTF8',

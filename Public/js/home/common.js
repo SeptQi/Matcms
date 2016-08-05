@@ -148,3 +148,4 @@ $("#singcms-push").on('click', function(){
         }
     }, "JSON");
 })
+
