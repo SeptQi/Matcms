@@ -26,7 +26,8 @@ class LoginController extends Controller {
         if(!trim($password)){
             return show(0,'密码不能为空');
         }
-        $ret=D('Admin') -> getAdminByUsername($username);
+        $user = D('Admin');
+        $ret = $user -> getAdminByUsername($username);
         $ret['lastloginip'] = ip2long($_SERVER['REMOTE_ADDR']);
         if(!$ret){
             return show(0,'该用户不存在');
@@ -38,7 +39,6 @@ class LoginController extends Controller {
         $data['lastloginip'] = $ret['lastloginip'];
         $data['admin_id'] = $ret['admin_id'];
         $data['lastlogintime'] = time();
-        $user = D('Admin');
         $a = $user -> updateById($data);
         if($a === false){
             return show(0,'有数据更新失败');

@@ -113,4 +113,11 @@ class NewsModel extends Model
         $list = $this->_db->where($data)->order('count desc,news_id desc')->limit($limit)->select();
         return $list;
     }
+
+    public function maxcount(){
+        $data = array(
+            'status' => 1,
+            );
+        return $this -> _db -> where($data) -> order('count desc') -> limit(1) -> find();
+    }
 }

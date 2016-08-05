@@ -38,6 +38,14 @@ class PositionModel extends Model
             ->select();
         return $list;
     }
+    public function updateById($id, $data)
+    {
+        //dump($data);die;
+        if (!$data || !is_array($data)) {
+            throw_exception('修改数据不合法');
+        }
+        return $this->_db->where('id=' . $id)->save($data);
+    }
     public function getPositionCount()
     {
         $conditions['status'] = array('neq', -1);
@@ -59,11 +67,10 @@ class PositionModel extends Model
         $conditions = array('status' => 1);
         return $list = $this->_db->where($conditions)->order('id')->select();
     }
-    public function find($id)
-    {
-        if (!$id || !is_numeric($id)) {
-            throw_exception('id不合法');
-        }
-        return $this->_db->find($id);
+
+    public function getCount($data=array()) {
+        $conditions = $data;
+        $list = $this->_db->where($conditions)->count();
+        return $list;
     }
 }

@@ -32,6 +32,6 @@ class EmptyController extends Controller
             'config'  => $config,
             'catId'   => $catId,
             ));
-        $this->show();
+        $this->display('empty/empty');
     }
 }

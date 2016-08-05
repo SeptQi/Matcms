@@ -9,4 +9,8 @@ return array(
     //密码加入前缀
     'MD5_PRE' => 'curtain',
     'SHOW_PAGE_TRACE' => true,
+    
+    'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
+	'DEFAULT_MODULE'       =>    'Home',
+
 );
