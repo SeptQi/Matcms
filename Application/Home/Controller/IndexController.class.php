@@ -1,6 +1,5 @@
 <?php
 namespace Home\Controller;
-use Common\Model;
 class IndexController extends CommonController
 {
     public function index()
@@ -40,10 +39,6 @@ class IndexController extends CommonController
             return show(0,'密码错误');
         }
         session('userInfo',$res);
-        $_POST['lastlogintime'] = time();
-        $_POST['lastloginip'] = ip2long($_SERVER['REMOTE_ADDR']);
-        $_POST['admin_id'] = $_SESSION['userInfo']['admin_id'];
-        $admin -> updateById($_POST);
         return show(1, '登陆成功');
     }
 
@@ -55,15 +50,8 @@ class IndexController extends CommonController
         return show(1,'退出登录成功');
     }
 
-    public function registerUser()
+    public function insert()
     {
-        $_POST['type'] = 1;
-        $_POST['password'] = md5($_POST['password'].C('MD5_PRE'));
-        $admin = D('Admin');
-        $res = $admin -> insert($_POST);
-        if(!$res){
-            return show(0,'注册失败，请稍后再试');
-        }
         return show(1, '注册成功');
     }
 }

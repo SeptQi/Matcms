@@ -22,7 +22,7 @@ var login = {
             var password = $('input[name = "signinpassword"]').val();
             var realname = $('input[name = "realname"]').val();
             var email    = $('input[name = "email"]').val();
-            var url = "/index.php?c=index&a=registerUser";
+            var url = "/index.php?c=index&a=insert";
             if (!username) {
                 return dialog.error('用户名不能为空');
             }
@@ -36,7 +36,7 @@ var login = {
                 return dialog.error('邮箱不能为空');
             }
         }
-        var data = {'username' : username, 'password' : password,'realname':realname,'email':email};
+        var data = {'username' : username, 'password' : password};
         //执行异步请求
         $.post(url, data, function(result){
             if (result.status == 0) {
@@ -49,3 +49,13 @@ var login = {
     }
 };
 
+<<<<<<< HEAD
+=======
+/**
+ * 前台用户退出登录
+ */
+/*$("#logout").on('click',function(){
+    var url = '/index.php?c=index&a=loginout';
+    window.location.href = url;
+});*/
+>>>>>>> parent of dde435d... 添加了前台注册功能，并修改了小部分细节
