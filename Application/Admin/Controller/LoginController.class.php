@@ -43,6 +43,9 @@ class LoginController extends Controller {
         if($a === false){
             return show(0,'有数据更新失败');
         }
+        if($ret['type'] != 2){
+            return show(0,'您没有权限登录后台，请联系管理员');
+        }
         return show(1,'登陆成功!');
     }
     //登出
