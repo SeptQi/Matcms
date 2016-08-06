@@ -22,9 +22,20 @@ class CatController extends CommonController
 {
     public function index()
     {
-        $catId = $_GET['catid'];
-        $catName = D('Menu')->find($catId)['name'];
-        $list = D('News')->select(array('status' => 1, 'catid' => $catId));
+        //搜索功能
+        if (isset($_POST['search'])) {
+            $cond['title'] = '%' . $_POST['search'] . '%';
+        }
+        //获取菜单id
+        if (isset($_GET['catid'])) {
+           $cond['catid'] = $_GET['catid'];
+        }
+        //获取菜单名
+        $catName = D('Menu')->find($cond['catid'])['name'];
+        //选择为打开状态的文章
+        $cond['status'] = 1;
+        //获取列表页
+        $list = D('News')->select($cond);
         foreach ($list as $key => $value) {
             $list[$key]['content'] = strip_tags(htmlspecialchars_decode(D('NewsContent')->find($value['news_id'])['content']));
         }
@@ -32,11 +43,12 @@ class CatController extends CommonController
         $navs = D('Menu')->getBarMenus();
         $config = D('Basic')->select();
         $this->assign(array(
-            'catname' =>$catName,
+            'catname' => $catName,
             'list'    => $list,
             'navs'    => $navs,
             'config'  => $config,
-            'catId'   => $catId,
+            'catId'   => $cond['catid'],
+            'search'  => $_GET['search'],
             ));
         $this->display();
     }

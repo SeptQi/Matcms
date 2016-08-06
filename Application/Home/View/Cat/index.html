@@ -12,8 +12,8 @@
      <div class="container" style="width: 100%;">
      <volist name="list" id="vo">
          <div class="about-grids">
-             <h3 style="width: 500px;">{$vo.title}</h3>
-             <p class="abt-info">{$vo.content|mb_substr=0,100}</p>
+             <h3 style="width: 500px;"><a href="/index.php?c=detail&id={$vo['news_id']}&catid={$vo['catid']}" style="font-size: 24px;">{$vo.title}</a></h3>
+             <p class="abt-info">{$vo.content|mb_substr=0,100} . . . </p>
              <div class="about-pic" style="width: 150px;">
                  <img src="{$vo.thumb}" alt=""/>
              </div>
