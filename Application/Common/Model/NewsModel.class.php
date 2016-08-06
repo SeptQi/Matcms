@@ -58,11 +58,15 @@ class NewsModel extends Model
         }
         return $this->_db->where($data)->count();
     }
+
+
     public function find($id)
     {
         $data = $this->_db->where('news_id=' . $id)->find();
         return $data;
     }
+
+    
     public function updateById($id, $data)
     {
         if (!$id || !is_numeric($id)) {

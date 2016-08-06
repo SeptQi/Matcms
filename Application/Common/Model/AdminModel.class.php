@@ -41,7 +41,7 @@ class AdminModel extends Model
         return $this -> _db -> where('username = "'.$data['username'].'"') -> find();
     }
 
-    public function getLastLOginUser()
+    public function getLastLoginUser()
     {
         $time = mktime(0,0,0,date("m"),date("d"),date("Y"));
         $data = array(

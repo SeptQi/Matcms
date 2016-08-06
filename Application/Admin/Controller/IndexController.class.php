@@ -9,11 +9,11 @@ class IndexController extends CommonController {
     public function index()
     {
         $new = D('News') -> maxcount();
-        $newsCount = D('news')->getNewsCount(array('status'=>1));
+        $newsCount = D('News')->getNewsCount(array('status'=>1));
         $positionCount = D('Position') -> getCount(array('status'=>1));
         $adminCount = D('Admin') -> getLastLoginUser();
         // 阅读数
-        $this->assign( 'news',$news);
+        $this->assign( 'new',$new);
         // 文章数量
         $this->assign( 'newscount',$newsCount);
         // 推荐位数
