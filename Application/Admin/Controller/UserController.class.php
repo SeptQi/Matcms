@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class UserController extends Controller
+class UserController extends CommonController
 {
 
     public function index()
@@ -57,10 +57,50 @@ class UserController extends Controller
         }
     }
 
-    public function save($data){
-        dump($data);
+    public function save($data)
+    {
         D('User')->updateById($data);
     }
     
-    
+    public function setStatus1($data)
+    {
+        $res = D('User') -> DE($data);
+        if(!$res){
+            return show(0,'删除用户时发生未知错误');
+        }
+        return show(1,'删除用户成功');
+
+    }
+
+    public function setStatus()
+    {
+        $data = array(
+            'id' => intval($_POST['id']),
+            'status' => intval($_POST['status']),
+            );
+        $res = D('User') -> DeleteUser($_POST);
+        if(!$res){
+            return show(0,'删除用户时发生未知错误');
+        }
+        return show(1,'删除成功');
+    }
+
+    public function personal()
+    {
+
+        $this->display();
+    }
+
+    public function UserInfoSave()
+    {
+       $res = D('User')->updateById($_POST);
+       if($res === 0){
+        return show(0,'信息没有改动');
+       }
+       if($res === false){
+        return show(0,'信息更新失败');
+       }
+       session('adminUser',null);
+       return show(1,'更新信息成功,请重新登录');
+    }
 }

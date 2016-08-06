@@ -51,4 +51,5 @@ class AdminModel extends Model
         $res = $this -> _db -> where($data)->count();
         return $res['tp_count'];
     }
+
 }

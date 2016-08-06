@@ -65,7 +65,7 @@
 
       <if condition = '$Think.session.userInfo.username ' >
             <div class="social">  
-              <span class="btn btn-primary">欢迎回来：{$Think.session.userInfo.username}</span>
+              <span class="btn btn-primary" data-toggle="modal" data-target="#userInfo">欢迎回来：{$Think.session.userInfo.username}</span>
               <a href='/index.php?c=index&a=loginout'><button class="btn btn-primary">退出登录</button></a>
              </div>
         <else />
@@ -139,6 +139,38 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
         <button type="button" class="btn btn-primary" onclick="login.check('1')">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 修改用户资料 -->
+<div class="modal fade" id="userInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">修改资料</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名：</label>
+            <input type="text" class="form-control" name="signinusername" value="{$Think.session.userInfo.username}" disabled>
+          </div>
+         
+          <div class="form-group" id="#asd">
+            <label for="message-text" class="control-label">昵称：</label>
+            <input type="text" class="form-control" name="editrealname" value="{$Think.session.userInfo.realname}">
+          </div>
+          <div class="form-group" id="#email">
+            <label for="message-text" class="control-label">邮箱：</label>
+            <input type="text" class="form-control" name="editemail" value="{$Think.session.userInfo.email}">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
+        <button type="button" class="btn btn-primary" onclick="login.check('2')">更新</button>
       </div>
     </div>
   </div>

@@ -65,4 +65,16 @@ class IndexController extends CommonController
         }
         return show(1, '注册成功');
     }
+
+    public function editUserInfo()
+    {
+        $_POST['admin_id'] = $_SESSION['userInfo']['admin_id'];
+        $res = D('User')->updateById($_POST);
+        if($res === false){
+            return show(0,'用户信息修改失败');
+        }
+        session('userInfo',null);
+        
+        return show(1,'用户信息修改成功,请重新登录');
+    }
 }

@@ -4,6 +4,29 @@
 var login = {
     check : function(type) {
         //获取登录页面中的用户名和密码
+        //2为修改用户信息
+        if(type == 2){
+            var realname = $('input[name = "editrealname"]').val();
+            var email = $('input[name = "editemail"]').val();
+            var url = "/index.php?c=index&a=editUserInfo"; 
+            if (!realname) {
+                    return dialog.error('昵称不能为空');
+            }
+            if (!email) {
+                return dialog.error('邮箱不能为空');
+            }
+            var data = {'username' : username, 'realname' : realname,'email':email};
+            $.post(url, data, function(result){
+            if (result.status == 0) {
+                return dialog.error(result.message);
+            }
+            if (result.status == 1) {
+                return dialog.success(result.message, '');
+            }
+        }, 'JSON');
+        }
+
+
         //0为登录
         if (type ==  0) {
             var username = $('input[name = "loginusername"]').val();

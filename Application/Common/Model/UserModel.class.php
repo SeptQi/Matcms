@@ -41,4 +41,9 @@ class UserModel extends Model
         $list = $this->_db->where($conditions)->select();
         return $list;
     }
+
+    public function DeleteUser($data)
+    {
+        return $this->_db-> where('admin_id ='.$data['id']) -> save($data);
+    }
 }

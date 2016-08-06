@@ -67,8 +67,9 @@
                   <th>上次登录时间</th>
                   <th>邮箱地址</th>
                   <th>真实名字</th>
-                  <th>状态</th>
+                  <!-- <th>状态</th> -->
                   <th>类型</th>
+                  <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -81,8 +82,12 @@
                       <td>{$data.lastlogintime|date='Y-m-d H:i:s',###}</td>
                       <td>{$data.email}</td>
                       <td>{$data.realname}</td>
-                      <td><span attr-status="<if condition="$data.status eq 1">1<else/>0</if>"  attr-id="{$data.user_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$new.status|status}</span></td>
+                      <!-- 状态<td><span attr-status="<if condition="$data.status eq 1">1<else/>0</if>"  attr-id="{$data.user_id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$new.status|status}</span></td> -->
                       <td>{$data.type|getUserType}</td>
+                     <td>
+                      <!--  <span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$data.admin_id}" ></span> -->
+                         <span class="sing_cursor glyphicon glyphicon-remove-circle" aria-hidden="true" id="singcms-delete"  attr-id="{$data.admin_id}"  attr-message="要删除，如想恢复请联系管理员"></span>
+                      </td>
                     </tr>
                   </volist>
                 </tbody>
