@@ -77,8 +77,8 @@
                     <tr>
                       <td><input type="checkbox" name="pushcheck" value="{$data.news_id}"></td>
                       <td>{$data.admin_id}</td>
-                      <td>{$data.username}</td>
-                      <td>{$data.lastloginip}</td>
+                      <td>{$data.username|str_ireplace=$search,"<font color='#ff000'>$search</font>",###}</td>
+                      <td>{$data.lastloginip|long2ip}</td>
                       <td>{$data.lastlogintime|date='Y-m-d H:i:s',###}</td>
                       <td>{$data.email}</td>
                       <td>{$data.realname}</td>

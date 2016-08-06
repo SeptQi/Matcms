@@ -37,14 +37,18 @@ function getMenuType($type)
     return $type == 1 ? '后台菜单' : '前端导航';
 }
 
+
+
+
+
 function status($status)
 {
     if ($status == 0) {
-        $str = '关闭';
+        $str = '<span style="color:red">关闭</span>';
     }elseif ($status == 1) {
-        $str = '正常';
+        $str = '<span style="color:green">正常</span>';
     }elseif ($status == -1) {
-        $str = '删除';
+        $str = '<span style="color:red">删除</span>';
     }
     return $str;
 }
@@ -109,3 +113,4 @@ function getUserType($type){
     }
     return '<span style="color:green">前台用户</span>';
 }
+

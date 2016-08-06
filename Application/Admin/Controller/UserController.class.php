@@ -19,6 +19,7 @@ class UserController extends CommonController
         $data = D('User') -> getUserInfo($conds);
         $this->assign('data',$data);
         $this->assign('conds',$conds);
+        $this->assign('search',$conds['title']);
         $this->display();
     }
 

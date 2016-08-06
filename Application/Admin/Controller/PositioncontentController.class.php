@@ -48,7 +48,8 @@ class PositioncontentController extends CommonController
             'title'      => $title,
             'lists'      => $lists,
             'positionid' => $positionid,
-            'pageres'       => $pageObj->show(),
+            'pageres'    => $pageObj->show(),
+            'search'     => $data['title'],
             ));
         $this->display();
     }

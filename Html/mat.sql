@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016-08-06 21:13:11
+-- Generation Time: 2016-08-06 21:18:04
 -- 服务器版本： 5.7.11
 -- PHP Version: 5.6.19
 
@@ -55,7 +55,7 @@ INSERT INTO `mat_admin` (`admin_id`, `username`, `password`, `lastloginip`, `las
 
 CREATE TABLE `mat_menu` (
   `menu_id` smallint(6) UNSIGNED NOT NULL,
-  `pos_id` tinyint(2) UNSIGNED DEFAULT NULL COMMENT AS `关联推荐位id`,
+  `pos_id` tinyint(2) UNSIGNED DEFAULT NULL,
   `name` varchar(40) NOT NULL DEFAULT '',
   `parentid` smallint(6) NOT NULL DEFAULT '0',
   `m` varchar(20) NOT NULL DEFAULT '',
@@ -94,7 +94,7 @@ CREATE TABLE `mat_news` (
   `catid` smallint(5) UNSIGNED NOT NULL DEFAULT '0',
   `title` varchar(80) NOT NULL DEFAULT '',
   `small_title` varchar(30) NOT NULL DEFAULT '',
-  `title_font_color` varchar(250) DEFAULT NULL COMMENT AS `标题颜色`,
+  `title_font_color` varchar(250) DEFAULT NULL,
   `thumb` varchar(100) NOT NULL DEFAULT '',
   `keywords` char(40) NOT NULL DEFAULT '',
   `description` varchar(250) NOT NULL COMMENT '文章描述',

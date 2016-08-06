@@ -74,7 +74,7 @@
                 <tr>
                   <td><input size=4 type='text'  name='listorder[{$list['id']}]' value="{$list['listorder']}"/></td>
                   <td>{$list['news_id']}</td>
-                  <td>{$list['title']}</td>
+                  <td>{$list['title']|str_ireplace=$search,"<font color='#ff000'>$search</font>",###}</td>
                   <td>{$list['create_time']|date="Y-m-d H:i:s",###}</td>
                   <td>{$list['thumb']|isThumb}</td>
                   <td>

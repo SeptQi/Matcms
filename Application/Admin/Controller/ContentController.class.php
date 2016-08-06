@@ -48,6 +48,7 @@ class ContentController extends CommonController
             'conds'       => $conds,
             'positions'   => $positions,
             'count'       => $count,
+            'search'       => $conds['title'],
             ));
         $this->display();
     }
