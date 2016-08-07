@@ -24,6 +24,7 @@ class ContentController extends CommonController
 {
     public function index()
     {
+        //对传来数据合法性进行判断
         $conds = array();
         if ($_GET['title']) {
             $conds['title'] = $_GET['title'];
@@ -32,15 +33,20 @@ class ContentController extends CommonController
             $conds['catid'] = intval($_GET['catid']);
         }
         $conds['status'] = array('neq', -1);
+        //开始分页
         $page = $_REQUEST['p'] ? $_REQUEST['p'] : 1;
         $pageSize = 10;
         $startRow = ($page - 1) * $pageSize;
         $limit = $startRow . ',' . $pageSize;
-        $news = D('News')->select($conds, $limit);
         $count = D('News')->getNewsCount($conds);
         $res = new \Admin\Vendor\Page($count, $pageSize);
         $pageres = $res->show();
+        //分页结束
+        //获取数据
+        $news = D('News')->select($conds, $limit);
+        //获取推荐位用于下拉列表显示
         $positions = D('Position')->getNormalPositions();
+        //分配到模板
         $this->assign(array(
             'webSiteMenu' => D('Menu')->getBarMenus(),
             'pageres'     => $pageres,
