@@ -10,15 +10,15 @@ $("#button-add").click(function () {
  * 提交form表单操作
  */
 $("#singcms-button-submit").click(function () {
+    //传来数据转为数组
     var data = $("#singcms-form").serializeArray();
     var postData = {};
     $(data).each(function (i) {
         postData[this.name] = this.value;
     });
-    //console.log(postData);
+    var url = SCOPE.save_url;     //'save_url' : '/admin.php?c=content&a=add'
+    var jump_url = SCOPE.jump_url;//'jump_url' : '/admin.php?c=content'
     //将获取的数据post给服务器
-    var url = SCOPE.save_url;
-    var jump_url = SCOPE.jump_url;
     $.post(url, postData, function (result) {
         if (result.status == 1) {
             //成功
@@ -46,12 +46,12 @@ $(".singcms-table #singcms-delete").on('click', function () {
     var id = $(this).attr('attr-id');
     var a = $(this).attr('attr-a');
     var message = $(this).attr('attr-message');
-    var url = SCOPE.set_status_url;
-
+    var url = SCOPE.set_status_url; //'set_status_url' : '/admin.php?c=content&a=setStatus',
+    //
     data = {};
     data['id'] = id;
     data['status'] = -1;
-
+    //弹窗确认
     layer.open({
         type : 0,
         title : '是否提交',
@@ -86,9 +86,8 @@ $("#button-listorder").click(function () {
     $(data).each(function (i) {
         postData[this.name] = this.value;
     });
-    console.log(postData);
     //将获取的数据post给服务器
-    var url = SCOPE.listorder_url;
+    var url = SCOPE.listorder_url; //'listorder_url' : '/admin.php?c=content&a=listorder',
     $.post(url, postData, function (result) {
         if (result.status == 1) {
             //成功
@@ -106,7 +105,7 @@ $("#button-listorder").click(function () {
 $(".singcms-table #singcms-on-off").on('click', function () {
     var id = $(this).attr('attr-id');
     var status = $(this).attr('attr-status');
-    var url = SCOPE.set_status_url;
+    var url = SCOPE.set_status_url; //'set_status_url' : '/admin.php?c=content&a=setStatus',
     data = {};
     data['id'] = id;
     data['status'] = status;
@@ -123,6 +122,7 @@ $(".singcms-table #singcms-on-off").on('click', function () {
         }
     })
 });
+
 /**
  * 推送相关
  */

@@ -22,16 +22,9 @@ use Think\Exception;
 
 class TestController extends Controller
 {
-    function getCount()
+    public function index()
     {
-        $navs = '555';
-        try {
-            $navs = ($navs == 'content') ? 'news' : $navs;
-            $navs = ucfirst($navs);
-            $getc = 'get' . $navs . 'Count';
-            echo D($navs)->$getc();
-        } catch(Exception $e) {
-            echo 0;
-        }
+        $this->display();   
     }
+    
 }

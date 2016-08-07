@@ -37,6 +37,7 @@ class NewsModel extends Model
     }
     public function select($data = array(), $limit = 0)
     {
+        //组合限制条件
         $conditions = $data;
         if (isset($data['title']) && $data['title']) {
             $conditions['title'] = array('like','%' . $data['title'] . '%');
@@ -46,8 +47,8 @@ class NewsModel extends Model
         }
         $list = $this->_db
             ->where($conditions)
-            ->order('listorder desc,news_id desc')
-            ->limit($limit)
+            ->order('listorder desc,news_id desc') // 优先按照排序分组，然后按照id
+            ->limit($limit) //分页用
             ->select();
         return $list;
     }

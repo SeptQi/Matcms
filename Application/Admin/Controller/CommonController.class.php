@@ -48,9 +48,8 @@ class CommonController extends Controller
 	 */
     public function setStatus($data, $model)
     {
-    	//dump($data);die;
+        //异常处理
         try {
-            //throw_exception('sjsj');
             if ($data) {
                 $id = $data['id'];
                 $status = $data['status'];
@@ -77,9 +76,9 @@ class CommonController extends Controller
         $listorder = $_POST['listorder'];
         $jump_url = $_SERVER['HTTP_REFERER'];
         $errers = array();
-        //dump($_POST);die;
         try {
             if ($listorder) {
+                //遍历传来数组，逐条修改数据库
                foreach ($listorder as $id => $v) {
                    $id = D($model)->updateListorderById($id, $v);
                    if ($id === false) {

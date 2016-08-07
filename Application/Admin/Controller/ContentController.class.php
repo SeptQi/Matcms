@@ -97,15 +97,16 @@ class ContentController extends CommonController
             $titleFontColor = C('TITLE_FONT_COLOR');
             $copyFrom = C('COPY_FROM');
             $this->assign(array(
-                'webSiteMenu' => $webSiteMenu,
+                'webSiteMenu'    => $webSiteMenu,
                 'titleFontColor' => $titleFontColor,
-                'copyFrom' => $copyFrom,
+                'copyFrom'       => $copyFrom,
             ));
             $this->display();
         }
     }
     public function edit()
     {
+        //对传来数据合法性进行验证
         $newId = $_GET['id'];
         if (!$newId) {
             $this->redirect(U('index'));
@@ -118,6 +119,7 @@ class ContentController extends CommonController
         if ($newsContent) {
             $news['content'] = $newsContent['content'];
         }
+        //获取菜单列表
         $webSiteMenu = D('Menu')->getBarMenus();
         $this->assign(array(
             'webSiteMenu'    => $webSiteMenu,
